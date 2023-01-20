@@ -1,14 +1,30 @@
 .homeMain {
-  /* border: 3px solid red; */
+  border: 3px solid red;
   border-radius: 25px;
   margin-top: 3.5%;
   margin-left: 15%;
   margin-right: 15%;
-  height: 100vh;
+  height: 100%;
   background-color: rgba(250, 248, 248, 0.979);
 
 
 }
+
+.navbar {
+    /* border: 3px solid blue; */
+    border-radius: 25px;
+  
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+  
+  }
+
+  .email {
+    list-style: none;
+    height: 3vh;
+  }
 
 .brandIcon {
     font-family: 'Syncopate', sans-serif;
@@ -20,9 +36,20 @@
 
 
 
-.icon{
+.contactIcon{
     height: 5vh;
 }
+
+
+.skillsBox{
+    max-width: 100%;
+}
+.icon{
+    height: 8vh;
+    margin: 0;
+    padding: 5px;
+}
+
 
 .proFont {
     font-family: 'Syncopate', sans-serif;
@@ -38,16 +65,21 @@
 .about {
     border: 3px solid green;
     width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .aboutTitle {
-    margin-top: 10%;
+    /* border: 3px solid red; */
     font-family: "Copperplate", fantasy;
     font-size: 3vh;
 }
 
 .proLinks{
-    border: 3px solid red;
+    /* border: 3px solid red; */
+    display: flex;
+    justify-content: center;
 }
 
 .photo {
@@ -56,16 +88,14 @@
     width: 40%;
     margin-left: .5%;
 }
-.navbar {
-  /* border: 3px solid blue; */
-  border-radius: 25px;
 
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  list-style-type: none;
 
+
+
+.projects {
+    border: 3px solid purple;
 }
+
 
 li {
     display: inline-block;
@@ -80,7 +110,7 @@ li a{
 }
     
 li a:hover{
-    background-color: black;
+    border-radius: 100%;
 }
     
 
