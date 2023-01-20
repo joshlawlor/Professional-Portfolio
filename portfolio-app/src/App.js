@@ -5,6 +5,8 @@ import { Route, Routes} from 'react-router-dom'
 
 import Home from './pages/HomePage/HomePage'
 
+import bricks from "./assets/images/bricks.webp"
+
 function App() {
   return (
     <div className="App">
@@ -13,7 +15,9 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
       </Routes>
-      <footer><h1>hi</h1></footer>
+      <footer className='footer'>
+      <li className="brandIconFooter">JL</li>
+        <h3 className='copyright'>@2023 JL. ALL RIGHTS RESERVED</h3></footer>
     </div>
   );
 }

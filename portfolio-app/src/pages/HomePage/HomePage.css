@@ -1,9 +1,9 @@
 .homeMain {
-  border: 3px solid red;
+  /* border: 3px solid red; */
   border-radius: 25px;
   margin-top: 3.5%;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 13%;
+  margin-right: 13%;
   height: 100%;
   background-color: rgba(250, 248, 248, 0.979);
 
@@ -27,11 +27,15 @@
   }
 
 .brandIcon {
-    font-family: 'Syncopate', sans-serif;
-    margin-top: 1%;
+    font-family: 'Playball', cursive;
+        margin-top: 1%;
     margin-left: .5%;
     float: left;
     font-size: xx-large;
+    color: white;
+    background-color: #75c1fe;
+    padding: 10px;
+    border-radius: 95%;
 }
 
 
@@ -50,30 +54,53 @@
     padding: 5px;
 }
 
+.smallIcon {
+    height: 1.4vh;
+}
+
 
 .proFont {
     font-family: 'Syncopate', sans-serif;
+    color: #75c1fe;
 }
 
 
 .aboutContainer {
     /* border: 3px solid black; */
     display: flex;
+    justify-content: center;
+    padding: 5px;
+    min-width: 40vw;
+    min-height: 50vh;
+    max-height: 85vh;
 }
 
 
 .about {
-    border: 3px solid green;
-    width: 60%;
+    /* border: 3px solid green; */
+    /* min-width: 55%; */
+    max-width: 56%;
+    max-height: 100vh;
+    /* overflow: auto; */
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding-bottom: 5%;
 }
 
 .aboutTitle {
     /* border: 3px solid red; */
-    font-family: "Copperplate", fantasy;
-    font-size: 3vh;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 6.3vh;
+    min-width: 15vw;
+    color: #75c1fe;
+}
+
+.navLinks {
+    float: right;
+    font-family: 'Syncopate', sans-serif;
+    margin-top: 1%;
 }
 
 .proLinks{
@@ -84,16 +111,24 @@
 
 .photo {
     /* border: 3px solid yellow; */
-    margin-right: .5%;
-    width: 40%;
-    margin-left: .5%;
+    max-width: 45%;
+    max-height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 6%;
+    margin-right: 6%;
+    margin-top: .5%;
+    margin-bottom: .5%;
+    min-width: 15vw;
+    max-height: 80vh; */
 }
 
 
 
 
 .projects {
-    border: 3px solid purple;
+    /* border: 3px solid purple; */
 }
 
 
@@ -103,7 +138,7 @@ li {
 
 li a{
     display: block;
-    color: rgb(122, 72, 72);
+    color: rgb(2, 1, 1);
     text-align: center;
     padding: 16px;
     text-decoration: none;
@@ -115,6 +150,63 @@ li a:hover{
     
 
 img {
+    /* border: 3px solid brown; */
     max-width: 100%;
+    max-height: 100%;
     border-radius: 10%;
+    margin: 0;
+}
+
+
+.bioBox {
+    max-width: 80%;
+    min-height: 40%;
+    max-height: 50%;
+    margin-top: 5%;
+    overflow: auto;
+    background-color: #012456;
+    color: white;
+    /* border: 3px solid black; */
+    font-family: 'Roboto Mono', monospace;    font-size: 1.2vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.bioHeader {
+    /* border: 3px solid green; */
+
+    background-color: rgb(231, 229, 229);
+    min-width: 80%;
+    min-height: 12%;
+    color: black;
+    padding: 3.5px;
+}
+.powershell{
+    float: left;
+    font-family: 'Roboto Mono', monospace;
+    color: black;
+}
+
+
+.bioTextBox {
+    /* border: 3px solid red; */
+    display: flex;
+    margin-left: 1%;
+    margin-right: 1%;
+    flex-direction: column;
+    align-items: flex-start
+
+}
+
+
+.bioTitle {
+    float: left;
+    max-width: 75%;
+    min-width: 80%;
+    /* border: 3px solid red; */
+}
+
+.bioText{
+    float: left;
+    font-size: 1.5vh;
 }

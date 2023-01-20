@@ -19,6 +19,7 @@ import NODE from "../../assets/images/node.png";
 import GIT from "../../assets/images/git.png";
 import C from "../../assets/images/csharp.png";
 import HEROKU from "../../assets/images/heroku.png";
+import POWER from "../../assets/images/power.webp";
 
 function HomePage() {
   return (
@@ -26,16 +27,25 @@ function HomePage() {
       <div className="homeNav">
         <ul className="navbar">
           <li className="brandIcon">JL</li>
-          <li className="email">
-            <Link>joshlawlor1@gmail.com</Link>
+          <li className="navLinks">
+            <Link>CONTACT</Link>
           </li>
+          <li className="navLinks">
+            <Link>RESUME</Link>
+          </li>
+          <li className="navLinks">
+            <Link>PROJECTS</Link>
+          </li>
+          {/* <li className="navLinks">
+            <Link>joshlawlor1@gmail.com</Link>
+          </li> */}
         </ul>
       </div>
 
       <div className="aboutContainer">
         <div className="about">
-          <div className="aboutTitle">
-            <h1 className="nintendo-font">Joshua Lawlor</h1>
+          <div>
+            <h1 className="aboutTitle">Joshua Lawlor</h1>
             <p className="proFont">Full-Stack Software Engineer</p>
           </div>
 
@@ -57,8 +67,14 @@ function HomePage() {
             </li>
           </div>
 
-          <div className="bio">
-            <p>
+          <div className="bioBox">
+            <div className="bioHeader">
+              <p className="powershell">
+                <img className="smallIcon" src={POWER} alt="icon"></img>Windows
+                Powershell
+              </p>
+            </div>
+            {/* <p>
               I am an aspiring Software Developer, with a background as a Data
               Specialist as well as Customer Service roles. I have always had a
               passion for Computer Science, when I was in high school I built my
@@ -70,61 +86,78 @@ function HomePage() {
               myself through the Software Engineering Immersive course with
               General Assembly, while working full time. This experience was
               definitely challenging but taught me patience and time management
+            </p> */}
+            <div className="bioTextBox">
+            <p className="bioTitle">
+              Copyright (C) 2015 Microsoft Corporation. All rights reserved.
             </p>
-          </div>
-          
-          <h2 className="nintendo-font">My Tech Stack</h2>
 
-          <div className="skillsBox">
-            <li>
-              <img className="icon" src={JS} alt="icon"></img>
-            </li>
-            <li>
-              <img className="icon" src={CSS} alt="icon"></img>
-            </li>
-            <li>
-              <img className="icon" src={HTML} alt="icon"></img>
-            </li>
-            <li>
-              <img className="icon" src={PYTHON} alt="icon"></img>
-            </li>
-            <li>
-              <img className="icon" src={C} alt="icon"></img>
-            </li>
-            <li>
-              <img className="icon" src={REACT} alt="icon"></img>
-            </li>
-            <li>
-              <img className="icon" src={NODE} alt="icon"></img>
-            </li>
-            <li>
-              <img className="icon" src={DJANGO} alt="icon"></img>
-            </li>
-            <li>
-              <img className="icon" src={MONGO} alt="icon"></img>
-            </li>
-            <li>
-              <img className="icon" src={SQL} alt="icon"></img>
-            </li>
-            <li>
-              <img className="icon" src={POSTMAN} alt="icon"></img>
-            </li>
-            <li>
-              <img className="icon" src={GIT} alt="icon"></img>
-            </li>
-            <li>
-              <img className="icon" src={HEROKU} alt="icon"></img>
-            </li>
+            <p className="bioText">I am a recent graduate in the field of software engineering and I
+              am excited to start my career in the tech industry. I bring a
+              diverse background of customer service and data specialist
+              experience, which I believe will make me a valuable addition to
+              any team. My skills include adapting to fast-paced work
+              environments and excelling in group settings. My approach to
+              problem-solving is to find the most effective and simplest
+              solution possible, while always striving to improve and expand my
+              skills as an engineer. I am seeking a company that values
+              creativity and will provide me with the opportunity to grow and
+              develop as an engineer. I am eager to contribute my talents and
+              enthusiasm to a dynamic team and work on innovative projects.
+            </p>
+            </div>
+            
           </div>
         </div>
         <div className="photo">
-          <img src={profile} alt="profile"></img>
+          <img src={profile} alt="profile" />
         </div>
       </div>
 
-      <div className="projects">
-        <h1>My Technical Projects</h1>
+      <h2 className="nintendo-font">My Tech Stack</h2>
+
+      <div className="skillsBox">
+        <li>
+          <img className="icon" src={JS} alt="icon"></img>
+        </li>
+        <li>
+          <img className="icon" src={CSS} alt="icon"></img>
+        </li>
+        <li>
+          <img className="icon" src={HTML} alt="icon"></img>
+        </li>
+        <li>
+          <img className="icon" src={PYTHON} alt="icon"></img>
+        </li>
+        <li>
+          <img className="icon" src={C} alt="icon"></img>
+        </li>
+        <li>
+          <img className="icon" src={REACT} alt="icon"></img>
+        </li>
+        <li>
+          <img className="icon" src={NODE} alt="icon"></img>
+        </li>
+        <li>
+          <img className="icon" src={DJANGO} alt="icon"></img>
+        </li>
+        <li>
+          <img className="icon" src={MONGO} alt="icon"></img>
+        </li>
+        <li>
+          <img className="icon" src={SQL} alt="icon"></img>
+        </li>
+        <li>
+          <img className="icon" src={POSTMAN} alt="icon"></img>
+        </li>
+        <li>
+          <img className="icon" src={GIT} alt="icon"></img>
+        </li>
+        <li>
+          <img className="icon" src={HEROKU} alt="icon"></img>
+        </li>
       </div>
+      <div className="projects"></div>
     </div>
   );
 }
