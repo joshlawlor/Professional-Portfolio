@@ -25,9 +25,11 @@
 
 .skillsBox{
     /* border: 3px solid red; */
-    max-height: 80%;
-    min-width: 10%;
-    padding-right: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 75vh;
+    min-width: 9%;
+    padding-right: 0%;
     overflow: auto;
     display: flex;
     flex-direction: column;
@@ -153,13 +155,14 @@ img {
     /* border: 3px solid brown; */
     max-width: 100%;
     min-height: 70%;
-    max-height: 100%;
+    max-height: 85%;
     border-radius: 10%;
-    margin: 0;
+    margin-bottom: 10%;
 }
 
 
 .bioBox {
+    width: 70vw;
     max-width: 80%;
     min-height: 40%;
     max-height: 50%;
@@ -193,11 +196,13 @@ img {
     /* border: 3px solid red; */
     display: flex;
     text-align: left;
+    /* width: 99%; */
     margin-left: 1%;
     margin-right: 1%;
     font-size: small;
     flex-direction: column;
     align-items: flex-start;
+    
     /* justify-content: flex-start; */
 
 }

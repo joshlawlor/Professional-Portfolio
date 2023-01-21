@@ -1,6 +1,7 @@
 import React from "react";
 import "./HomePage.css";
 import { Link } from "react-router-dom";
+import Typewriter from "typewriter-effect";
 
 import profile from "../../assets/images/profile.jpg";
 import github from "../../assets/images/githubicon.png";
@@ -22,6 +23,12 @@ import HEROKU from "../../assets/images/heroku.png";
 import POWER from "../../assets/images/power.webp";
 
 function HomePage() {
+
+  var bio = document.getElementById('bioTextBox')
+
+  const typewriter = new Typewriter(bio, {
+    delay: 50
+  })
   return (
       <div className="aboutContainer">
         <div className="about">
@@ -72,8 +79,23 @@ function HomePage() {
             <p className="bioTitle">
               Copyright (C) 2015 Microsoft Corporation. All rights reserved.
             </p>
+            <p>
+            <Typewriter
+            options={{
+              delay: 40
+            }}
+            onInit={(typewriter) => {
+              typewriter.typeString(`PS C:/User/ I am a recent graduate in the field of software engineering and I am excited to start my career in the tech industry. 
+              I bring a diverse background of customer service and data specialist experience, which I believe will make me a valuable addition to any team.
+              My skills include adapting to fast-paced work environments and excelling in group settings. My approach to problem-solving is to find the most effective 
+              and simplest solution possible, while always striving to improve and expand my skills as an engineer. I am seeking a company that value creativity and will 
+              provide me with the opportunity to grow and develop as an engineer. I am eager to contribute my talents andenthusiasm to a dynamic team and work on innovative projects`)
+              .pauseFor().start();
+            }}/>
+            </p>
+            
 
-            <p className="bioText">PS C:\User\{">"} I am a recent graduate in the field of software engineering and I
+            {/* <p className="bioText">PS C:\User\{">"} I am a recent graduate in the field of software engineering and I
               am excited to start my career in the tech industry. I bring a
               diverse background of customer service and data specialist
               experience, which I believe will make me a valuable addition to
@@ -85,7 +107,7 @@ function HomePage() {
               creativity and will provide me with the opportunity to grow and
               develop as an engineer. I am eager to contribute my talents and
               enthusiasm to a dynamic team and work on innovative projects_
-            </p>
+            </p> */}
             </div>
             
           </div>

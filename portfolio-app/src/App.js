@@ -6,10 +6,13 @@ import { Route, Routes, Link } from "react-router-dom";
 import Home from "./pages/HomePage/HomePage";
 import Projects from "./pages/ProjectPage/ProjectPage";
 import bricks from "./assets/images/bricks.webp";
+import clouds from "./assets/images/clouds.png"
 
 function App() {
   return (
-    <div className="App">
+  
+    <div  className="App">
+      
       <div className="appMain">
         <div className="homeNav">
           <ul className="navbar">
@@ -34,10 +37,12 @@ function App() {
           <Route path="/projects" element={<Projects />} />
         </Routes>
       </div>
-      <footer className="footer">
+      <footer  className="footer">
         <li className="brandIconFooter">JL</li>
         <h3 className="copyright">@2023 JL. ALL RIGHTS RESERVED</h3>
       </footer>
+      <div className="animatedBackground">
+      </div>
     </div>
   );
 }

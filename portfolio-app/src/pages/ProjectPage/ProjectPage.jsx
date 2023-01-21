@@ -25,16 +25,29 @@ function ProjectPage() {
 
                 <div className="galleryOne">
 
+                    <div className="project"> 
+                        <h1>P1</h1>
+                    </div>
+                    <div className="project">
+                        <h1>P2</h1>
+                    </div>
+
                 </div>
 
                 <div className="titleTwo">
-
+               
 
                 </div>
 
                 <div className="galleryTwo">
 
-                    
+                <div className="projectThree"> 
+                        <h1>P3</h1>
+                    </div>
+                    <div className="projectFour">
+                        <h1>P4</h1>
+                    </div>
+
                 </div>
 
             </div>
