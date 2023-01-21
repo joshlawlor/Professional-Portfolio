@@ -23,25 +23,6 @@ import POWER from "../../assets/images/power.webp";
 
 function HomePage() {
   return (
-    <div className="homeMain">
-      <div className="homeNav">
-        <ul className="navbar">
-          <li className="brandIcon">JL</li>
-          <li className="navLinks">
-            <Link>CONTACT</Link>
-          </li>
-          <li className="navLinks">
-            <Link>RESUME</Link>
-          </li>
-          <li className="navLinks">
-            <Link>PROJECTS</Link>
-          </li>
-          {/* <li className="navLinks">
-            <Link>joshlawlor1@gmail.com</Link>
-          </li> */}
-        </ul>
-      </div>
-
       <div className="aboutContainer">
         <div className="about">
           <div>
@@ -92,7 +73,7 @@ function HomePage() {
               Copyright (C) 2015 Microsoft Corporation. All rights reserved.
             </p>
 
-            <p className="bioText">I am a recent graduate in the field of software engineering and I
+            <p className="bioText">PS C:\User\{">"} I am a recent graduate in the field of software engineering and I
               am excited to start my career in the tech industry. I bring a
               diverse background of customer service and data specialist
               experience, which I believe will make me a valuable addition to
@@ -103,7 +84,7 @@ function HomePage() {
               skills as an engineer. I am seeking a company that values
               creativity and will provide me with the opportunity to grow and
               develop as an engineer. I am eager to contribute my talents and
-              enthusiasm to a dynamic team and work on innovative projects.
+              enthusiasm to a dynamic team and work on innovative projects_
             </p>
             </div>
             
@@ -112,11 +93,12 @@ function HomePage() {
         <div className="photo">
           <img src={profile} alt="profile" />
         </div>
-      </div>
 
-      <h2 className="nintendo-font">My Tech Stack</h2>
 
-      <div className="skillsBox">
+        <div className="skillsBox">
+        <h2 className="skillsTitle">Tech Stack</h2>
+        <div className="skills">
+
         <li>
           <img className="icon" src={JS} alt="icon"></img>
         </li>
@@ -157,8 +139,14 @@ function HomePage() {
           <img className="icon" src={HEROKU} alt="icon"></img>
         </li>
       </div>
+        </div>
+        
       <div className="projects"></div>
-    </div>
+
+      </div>
+
+
+    
   );
 }
 
