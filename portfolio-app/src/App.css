@@ -96,7 +96,7 @@ overflow-x: hidden;
 
 }
 
-.navbar {
+.navbarMain {
   /* border: 3px solid blue; */
   border-radius: 25px;
 
@@ -105,6 +105,18 @@ overflow-x: hidden;
   overflow: hidden;
   list-style-type: none;
 
+}
+
+.brandIcon {
+  font-family: 'Playball', cursive;
+  margin-top: 1%;
+  margin-left: 1%;
+  float: left;
+  font-size: xx-large;
+  color: white;
+  background-color: #75c1fe;
+  padding: 10px;
+  border-radius: 95%;
 }
 
 

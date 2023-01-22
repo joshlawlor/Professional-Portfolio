@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { Route, Routes, Link } from "react-router-dom";
 
@@ -15,8 +16,8 @@ function App() {
       
       <div className="appMain">
         <div className="homeNav">
-          <ul className="navbar">
-            <a href="/"><li className="brandIcon">JL</li></a>
+          <ul className="navbarMain">
+            {/* <a href="/"><li className="brandIcon">JL</li></a> */}
             <li className="navLinks">
               <Link>CONTACT</Link>
             </li>

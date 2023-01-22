@@ -122,43 +122,43 @@ function HomePage() {
         <div className="skills">
 
         <li>
-          <img className="icon" src={JS} alt="icon"></img>
+          <img className="icons" src={JS} alt="icon"></img>
         </li>
         <li>
-          <img className="icon" src={CSS} alt="icon"></img>
+          <img className="icons" src={CSS} alt="icon"></img>
         </li>
         <li>
-          <img className="icon" src={HTML} alt="icon"></img>
+          <img className="icons" src={HTML} alt="icon"></img>
         </li>
         <li>
-          <img className="icon" src={PYTHON} alt="icon"></img>
+          <img className="icons" src={PYTHON} alt="icon"></img>
         </li>
         <li>
-          <img className="icon" src={C} alt="icon"></img>
+          <img className="icons" src={C} alt="icon"></img>
         </li>
         <li>
-          <img className="icon" src={REACT} alt="icon"></img>
+          <img className="icons" src={REACT} alt="icon"></img>
         </li>
         <li>
-          <img className="icon" src={NODE} alt="icon"></img>
+          <img className="icons" src={NODE} alt="icon"></img>
         </li>
         <li>
-          <img className="icon" src={DJANGO} alt="icon"></img>
+          <img className="icons" src={DJANGO} alt="icon"></img>
         </li>
         <li>
-          <img className="icon" src={MONGO} alt="icon"></img>
+          <img className="icons" src={MONGO} alt="icon"></img>
         </li>
         <li>
-          <img className="icon" src={SQL} alt="icon"></img>
+          <img className="icons" src={SQL} alt="icon"></img>
         </li>
         <li>
-          <img className="icon" src={POSTMAN} alt="icon"></img>
+          <img className="icons" src={POSTMAN} alt="icon"></img>
         </li>
         <li>
-          <img className="icon" src={GIT} alt="icon"></img>
+          <img className="icons" src={GIT} alt="icon"></img>
         </li>
         <li>
-          <img className="icon" src={HEROKU} alt="icon"></img>
+          <img className="icons" src={HEROKU} alt="icon"></img>
         </li>
       </div>
         </div>

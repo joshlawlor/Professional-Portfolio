@@ -1,60 +1,106 @@
 .projectMain {
   min-width: 100vh;
-  max-height: 75%;
+  min-height: 85%;
   margin-bottom: 1%;
   margin-left: .5%;
   margin-right: .5%;
-  border: 3px solid red;
+  /* border: 3px solid red; */
   display: flex;
 }
 
 .sidebarMain {
-    border: 3px solid grey;
-    max-width: 5%;
-    min-height: 86vh;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    /* border: 3px solid grey; */
+    max-width: 6%;
+    /* min-height: 86vh; */
+
     display: flex;
     flex-direction: column;
-}
-
-.galleryMain {
-    border: 3px solid blue;
-    min-width:93%;
-}
-
-.titleOne {
-    border: 3px solid green;
-    text-align: left;
-}
-
-.galleryOne {
-    border: 3px solid black;
-    min-height: 40%;
-    display: flex;
-    flex-direction: row;
     justify-content: center;
 }
 
+.brandIconSide {
+    font-family: 'Playball', cursive;
+    margin-bottom: 10%;
+    margin-left: 4%;
+    width: 3.5vw;
+    float: left;
+    font-size: xX-large;
+    color: white;
+    background-color: #75c1fe;
+    padding: 10px;
+    border-radius: 75%;
+  }
+
+.galleryMain {
+    /* border: 3px solid blue; */
+    min-width: 94%;
+    min-height: 100%;
+}
+
+.title {
+    /* border: 3px solid green; */
+    text-align: left;
+    margin-left: 1%;
+    text-decoration: underline #75c1fe;
+}
+
+.gallery {
+    /* border: 3px solid black; */
+    min-height: 90%;
+    max-width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+   justify-content: space-around;
+}
+
 .project {
-
-    border: 3px solid yellow;
-    min-width: 40%;
-    margin: 1.5%;
-
+    /* border: 3px solid yellow; */
+    width: 35%;
 
 }
 
-.projectTwo {
-    border: 3px solid yellow;
+.projectModal {
+    /* border: 3px solid red; */
 }
 
-.titleTwo {
-    border: 3px solid green;
-    min-height: 10%;
+.projectContainer {
+    /* border: 3px solid red; */
+    min-width: 100%;
 }
 
-.galleryTwo {
-    border: 3px solid black;
-    min-height: 40%;
+.folder {
+    height: 25vh;
+    margin-bottom: -5%;
 }
+
+.folder:hover {
+    animation: shudder 1s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0 ,0 ,0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shudder {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform:  translate3d(4px, 0, 0);
+    }
+}
+
+.projectTitle{
+    font-family: 'Press Start 2P', cursive; 
+    font-size: medium;
+}
+
