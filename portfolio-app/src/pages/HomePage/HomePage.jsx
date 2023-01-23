@@ -54,6 +54,20 @@ function HomePage() {
               </a>
             </li>
           </div>
+          {/* <p className="nintendo-font">
+            <Typewriter
+            options={{
+              delay: 40
+            }}
+            onInit={(typewriter) => {
+              typewriter.typeString(`PS C:/User/ I am a recent graduate in the field of software engineering and I am excited to start my career in the tech industry. 
+              I bring a diverse background of customer service and data specialist experience, which I believe will make me a valuable addition to any team.
+              My skills include adapting to fast-paced work environments and excelling in group settings. My approach to problem-solving is to find the most effective 
+              and simplest solution possible, while always striving to improve and expand my skills as an engineer. I am seeking a company that value creativity and will 
+              provide me with the opportunity to grow and develop as an engineer. I am eager to contribute my talents andenthusiasm to a dynamic team and work on innovative projects`)
+              .pauseFor().start();
+            }}/>
+            </p> */}
 
           <div className="bioBox">
             <div className="bioHeader">
@@ -62,19 +76,6 @@ function HomePage() {
                 Powershell
               </p>
             </div>
-            {/* <p>
-              I am an aspiring Software Developer, with a background as a Data
-              Specialist as well as Customer Service roles. I have always had a
-              passion for Computer Science, when I was in high school I built my
-              first personal computer! That computer has been through many
-              modifications, and is still what I use today. I was inspired to
-              start my journey as a Software Engineer when I came across some
-              online coding challenges. I was surprised at how much fun I had
-              doing them, but never expected to fall in love with it. I have put
-              myself through the Software Engineering Immersive course with
-              General Assembly, while working full time. This experience was
-              definitely challenging but taught me patience and time management
-            </p> */}
             <div className="bioTextBox">
             <p className="bioTitle">
               Copyright (C) 2015 Microsoft Corporation. All rights reserved.
@@ -94,20 +95,6 @@ function HomePage() {
             }}/>
             </p>
             
-
-            {/* <p className="bioText">PS C:\User\{">"} I am a recent graduate in the field of software engineering and I
-              am excited to start my career in the tech industry. I bring a
-              diverse background of customer service and data specialist
-              experience, which I believe will make me a valuable addition to
-              any team. My skills include adapting to fast-paced work
-              environments and excelling in group settings. My approach to
-              problem-solving is to find the most effective and simplest
-              solution possible, while always striving to improve and expand my
-              skills as an engineer. I am seeking a company that values
-              creativity and will provide me with the opportunity to grow and
-              develop as an engineer. I am eager to contribute my talents and
-              enthusiasm to a dynamic team and work on innovative projects_
-            </p> */}
             </div>
             
           </div>

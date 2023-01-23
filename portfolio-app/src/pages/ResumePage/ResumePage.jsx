@@ -24,7 +24,9 @@ import C from "../../assets/images/csharp.png";
 import HEROKU from "../../assets/images/heroku.png";
 import POWER from "../../assets/images/power.webp";
 import EXPRESS from "../../assets/images/express.png";
-
+import MATERIALIZE from "../../assets/images/materialize.png"
+import TAILWIND from "../../assets/images/tailwind.png"
+import BOOTSTRAP from "../../assets/images/bootstrap.png"
 function ResumePage() {
   return (
     <div className="resumeMain">
@@ -108,21 +110,17 @@ function ResumePage() {
           </div>
           <div className="techBox">
             <div className="techItems">
-              <li>
-                <img className="resumeIcons" src={NODE} alt="icon"></img>
+            <li>
+                <img className="resumeIcons" src={BOOTSTRAP} alt="icon"></img>
               </li>
-              <li>
-                <img className="resumeIcons" src={EXPRESS} alt="icon"></img>
+            <li>
+                <img className="resumeIcons" src={TAILWIND} alt="icon"></img>
               </li>
-              <li>
-                <img className="resumeIcons" src={MONGO} alt="icon"></img>
+          
+            <li>
+                <img className="resumeIcons" src={MATERIALIZE} alt="icon"></img>
               </li>
-              <li>
-                <img className="resumeIcons" src={SQL} alt="icon"></img>
-              </li>
-              <li>
-                <img className="resumeIcons" src={POSTMAN} alt="icon"></img>
-              </li>
+    
               <li>
                 <img className="resumeIcons" src={PYTHON} alt="icon"></img>
               </li>

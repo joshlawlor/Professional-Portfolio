@@ -130,7 +130,8 @@ function ProjectPage() {
             <Card>
             <Card.Body>
                 <Card.Title>A debugging forum app!</Card.Title>
-                <Card.Subtitle><a href="https://github.com/joshlawlor/Debugger-App">Github Repository</a> </Card.Subtitle>
+                <Card.Subtitle> <a href="https://github.com/joshlawlor/Debugger-App">Github Repository</a></Card.Subtitle>
+                <Card.Subtitle> </Card.Subtitle>
             </Card.Body>
             <Carousel>
                 <Carousel.Item>
@@ -170,7 +171,7 @@ function ProjectPage() {
             <Card>
             <Card.Body>
                 <Card.Title>A debugging forum app!</Card.Title>
-                <Card.Subtitle><a href="https://github.com/joshlawlor/Debugger-App">Github Repository</a> </Card.Subtitle>
+                <Card.Subtitle><a href="https://bugbuddy.netlify.app/">Live Link</a> <a href="https://github.com/joshlawlor/BugBuddy-2.0">Github Repository</a> </Card.Subtitle>
             </Card.Body>
                 <Carousel>
                   <Carousel.Item>
@@ -213,7 +214,7 @@ function ProjectPage() {
             <Card>
             <Card.Body>
                 <Card.Title>My first portfolio website</Card.Title>
-                <Card.Subtitle><a href="https://github.com/joshlawlor/Debugger-App">Github Repository</a> </Card.Subtitle>
+                <Card.Subtitle><a href="https://joshualawlor.netlify.app/">Live Link</a> <a href="https://github.com/joshlawlor/Portfolio">Github Repository</a> </Card.Subtitle>
             </Card.Body>
                 <Carousel>
                   <Carousel.Item>
@@ -256,7 +257,7 @@ function ProjectPage() {
             <Card>
             <Card.Body>
                 <Card.Title>My first group project</Card.Title>
-                <Card.Subtitle><a href="https://github.com/joshlawlor/Debugger-App">Github Repository</a> </Card.Subtitle>
+                <Card.Subtitle><a href="https://github.com/joshlawlor/Project-3">Github Repository</a> </Card.Subtitle>
             </Card.Body>
                 <Carousel>
                   <Carousel.Item>
