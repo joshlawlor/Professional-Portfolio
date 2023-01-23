@@ -7,6 +7,7 @@ import { Route, Routes, Link } from "react-router-dom";
 import Home from "./pages/HomePage/HomePage";
 import Projects from "./pages/ProjectPage/ProjectPage";
 import Resume from "./pages/ResumePage/ResumePage"
+import Contact from "./pages/ContactPage/ContactPage"
 import bricks from "./assets/images/bricks.webp";
 import clouds from "./assets/images/clouds.png"
 
@@ -20,7 +21,7 @@ function App() {
           <ul className="navbarMain">
             {/* <a href="/"><li className="brandIcon">JL</li></a> */}
             <li className="navLinks">
-              <Link>CONTACT</Link>
+              <Link to="/contact">CONTACT</Link>
             </li>
             <li className="navLinks">
               <Link to="/resume">RESUME</Link>
@@ -38,6 +39,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/resume" element={<Resume/>}/>
+          <Route path="/contact" element={<Contact/>}/>
         </Routes>
       </div>
       <footer  className="footer">

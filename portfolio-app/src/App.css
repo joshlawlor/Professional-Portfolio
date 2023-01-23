@@ -158,3 +158,7 @@ overflow-x: hidden;
   padding: 10px;
   border-radius: 95%;
 }
+
+a {
+  text-decoration: none;
+}

@@ -34,13 +34,19 @@ function ResumePage() {
         </a>
 
         <li className="icons">
-          <img src={github} alt="linkedin" />
+        <a href="https://github.com/joshlawlor">
+          <img src={github} alt="github" />
+          </a>
         </li>
         <li className="icons">
+        <a href="https://www.linkedin.com/in/joshuaryanlawlor/">
           <img src={linkedin} alt="linkedin" />
+          </a>
         </li>
         <li className="icons">
-          <img src={email} alt="linkedin" />
+        <a href="mailto:joshlawlor1@gmail.com">
+          <img src={email} alt="email" />
+          </a>
         </li>
       </div>
       <div className="displayBox">
