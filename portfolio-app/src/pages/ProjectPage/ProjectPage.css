@@ -10,7 +10,7 @@
 
 .sidebarMain {
     /* border: 3px solid grey; */
-    max-width: 6%;
+    min-width: 6%;
     /* min-height: 86vh; */
 
     display: flex;

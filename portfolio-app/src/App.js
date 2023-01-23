@@ -6,6 +6,7 @@ import { Route, Routes, Link } from "react-router-dom";
 
 import Home from "./pages/HomePage/HomePage";
 import Projects from "./pages/ProjectPage/ProjectPage";
+import Resume from "./pages/ResumePage/ResumePage"
 import bricks from "./assets/images/bricks.webp";
 import clouds from "./assets/images/clouds.png"
 
@@ -22,7 +23,7 @@ function App() {
               <Link>CONTACT</Link>
             </li>
             <li className="navLinks">
-              <Link>RESUME</Link>
+              <Link to="/resume">RESUME</Link>
             </li>
             <li className="navLinks">
               <Link to="/projects">PROJECTS</Link>
@@ -36,6 +37,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/resume" element={<Resume/>}/>
         </Routes>
       </div>
       <footer  className="footer">

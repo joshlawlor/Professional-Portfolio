@@ -1,0 +1,65 @@
+.resumeMain {
+    border: 3px solid red;
+    min-height: 85%;
+    display: flex;
+}
+
+.displayBox {
+    border: 3px solid red;
+    min-width: 93.5%;
+}
+
+.techMain {
+    border: 3px solid green;
+    max-height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.techTitle {
+    border: 3px solid green;
+    min-width: 100%;
+    text-align: left;
+}
+
+.techBox {
+    border: 3px solid red;
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.techItems {
+    border: 3px solid black;
+    min-width: 60%;
+    min-height: 10vh;
+    background-color: grey;
+
+    margin: 1%;
+    display: flex;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: auto;
+}
+
+.resumeIcons {
+    height: 12vh;
+    margin-top: 3%;
+    /* padding: 10px; */
+}
+
+
+
+.experienceMain {
+    border: 3px solid blue;
+    max-height: 50%;
+}
+
+.experienceTitle {
+    min-width: 100%;
+    text-align: left;
+}
