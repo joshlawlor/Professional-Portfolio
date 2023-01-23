@@ -113,7 +113,7 @@ function HomePage() {
           </div>
         </div>
         <div className="photo">
-          <img src={profile} alt="profile" />
+          <img className="profilePhoto" src={profile} alt="profile" />
         </div>
 
 

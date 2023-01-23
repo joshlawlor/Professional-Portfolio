@@ -46,6 +46,7 @@
     height: 9vh;
     margin: 0;
     padding: 0px;
+    
 }
 
 .smallIcon {
@@ -140,14 +141,22 @@ li a:hover{
     
 
 img {
-    /* border: 3px solid brown; */
     max-width: 100%;
     min-height: 70%;
     max-height: 85%;
     border-radius: 10%;
     margin-bottom: 10%;
+    
 }
 
+.profilePhoto {
+    max-width: 100%;
+    min-height: 70%;
+    max-height: 85%;
+    border-radius: 10%;
+    margin-bottom: 10%;
+
+}
 
 .bioBox {
     width: 70vw;
