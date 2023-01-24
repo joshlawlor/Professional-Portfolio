@@ -54,10 +54,7 @@
 }
 
 
-.proFont {
-    font-family: 'Syncopate', sans-serif;
-    color: #75c1fe;
-}
+
 
 
 .aboutContainer {
@@ -89,6 +86,11 @@
     font-family: 'Press Start 2P', cursive;
     font-size: 6.3vh;
     min-width: 15vw;
+    color: #75c1fe;
+}
+
+.proFont {
+    font-family: 'Syncopate', sans-serif;
     color: #75c1fe;
 }
 

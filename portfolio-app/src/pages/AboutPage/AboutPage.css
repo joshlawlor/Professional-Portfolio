@@ -1,0 +1,59 @@
+.aboutMain {
+    border: 3px solid red;
+    height: 85%;
+    display: flex;
+}
+
+.aboutSideBar {
+      /* border: 3px solid grey; */
+      max-width: 6%;
+      /* min-height: 86vh; */
+  
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+}
+
+
+.fontStyle {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: large;
+}
+
+
+.aboutBox {
+    border: 3px solid blue;
+    min-width: 94%;
+    min-height: 100%;
+}
+
+
+.bookBox {
+    border: 3px solid saddlebrown;
+    min-width: 60%;
+    min-height: 15vh;
+    background-color: rgba(128, 128, 128, 0.336);
+    box-shadow: 10px 10px rgba(0,0,0,0.03);
+
+    border-radius: 25px;
+    margin: 1%;
+    display: flex;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: auto;
+}
+
+.movieBox {
+    border: 3px solid yellow;
+    min-width: 60%;
+    min-height: 15vh;
+    background-color: rgba(128, 128, 128, 0.336);
+    box-shadow: 10px 10px rgba(0,0,0,0.03);
+
+    border-radius: 25px;
+    margin: 1%;
+    display: flex;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: auto;
+}

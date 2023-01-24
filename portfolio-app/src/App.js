@@ -8,6 +8,7 @@ import Home from "./pages/HomePage/HomePage";
 import Projects from "./pages/ProjectPage/ProjectPage";
 import Resume from "./pages/ResumePage/ResumePage"
 import Contact from "./pages/ContactPage/ContactPage"
+import About from "./pages/AboutPage/AboutPage";
 import bricks from "./assets/images/bricks.webp";
 import clouds from "./assets/images/clouds.png"
 
@@ -22,6 +23,9 @@ function App() {
             {/* <a href="/"><li className="brandIcon">JL</li></a> */}
             <li className="navLinks">
               <Link to="/contact">CONTACT</Link>
+            </li>
+            <li className="navLinks">
+              <Link to="/about">ABOUT ME</Link>
             </li>
             <li className="navLinks">
               <Link to="/resume">RESUME</Link>
@@ -39,6 +43,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/resume" element={<Resume/>}/>
+          <Route path="/about" element={<About/>}/>
           <Route path="/contact" element={<Contact/>}/>
         </Routes>
       </div>
