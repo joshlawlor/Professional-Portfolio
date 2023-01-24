@@ -17,9 +17,9 @@ function AboutPage() {
   return (
     <div className="aboutMain">
       <div className="aboutSideBar">
-        <a href="/">
+        {/* <a href="/">
           <li className="brandIconSide">JL</li>
-        </a>
+        </a> */}
 
         <li className="icons">
           <a href="https://github.com/joshlawlor">

@@ -43,9 +43,9 @@ function ContactPage() {
   return (
     <div className="contactMain">
       <div className="contactSideBar">
-        <a href="/">
+        {/* <a href="/">
           <li className="brandIconSide">JL</li>
-        </a>
+        </a> */}
 
         <li className="icons">
           <a href="https://github.com/joshlawlor">

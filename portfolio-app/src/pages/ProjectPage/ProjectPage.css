@@ -2,20 +2,19 @@
   min-width: 100vh;
   min-height: 85%;
   margin-bottom: 1%;
-  margin-left: .5%;
-  margin-right: .5%;
+
   /* border: 3px solid red; */
   display: flex;
 }
 
 .sidebarMain {
-    /* border: 3px solid grey; */
-    min-width: 6%;
-    /* min-height: 86vh; */
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+      /* border: 3px solid grey; */
+      max-width: 6%;
+      /* min-height: 86vh; */
+  
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 }
 
 .brandIconSide {
@@ -39,8 +38,8 @@
 
 .title {
     /* border: 3px solid green; */
-    text-align: left;
-    margin-left: 1%;
+    text-align: center;
+    margin-right: 6%;
     text-decoration: underline #75c1fe;
 }
 

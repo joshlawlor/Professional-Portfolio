@@ -89,6 +89,12 @@ overflow-x: hidden;
 
 
 }
+
+.homeNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .navLinks {
     float: right;
     color: #75c1fe;
@@ -100,7 +106,7 @@ overflow-x: hidden;
 .navbarMain {
   /* border: 3px solid blue; */
   border-radius: 25px;
-
+  
   margin: 0;
   padding: 0;
   overflow: hidden;

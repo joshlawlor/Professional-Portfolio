@@ -42,9 +42,9 @@ function ProjectPage() {
   return (
     <div className="projectMain">
       <div className="sidebarMain">
-        <a href="/">
+        {/* <a href="/">
           <li className="brandIconSide">JL</li>
-        </a>
+        </a> */}
         <li className="icons">
         <a href="https://github.com/joshlawlor">
           <img src={github} alt="github" />

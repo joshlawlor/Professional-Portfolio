@@ -33,6 +33,9 @@ function App() {
             <li className="navLinks">
               <Link to="/projects">PROJECTS</Link>
             </li>
+            <li className="navLinks">
+              <Link to="/">HOME</Link>
+            </li>
             {/* <li className="navLinks">
             <Link>joshlawlor1@gmail.com</Link>
           </li> */}

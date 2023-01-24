@@ -30,10 +30,10 @@ import BOOTSTRAP from "../../assets/images/bootstrap.png"
 function ResumePage() {
   return (
     <div className="resumeMain">
-      <div className="sidebarMain">
-        <a href="/">
+      <div className="resumeSidebar">
+        {/* <a href="/">
           <li className="brandIconSide">JL</li>
-        </a>
+        </a> */}
 
         <li className="icons">
         <a href="https://github.com/joshlawlor">
