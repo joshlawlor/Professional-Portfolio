@@ -49,9 +49,9 @@ function HomePage() {
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/joshuaryanlawlor/">
-                <img className="contactIcon" src={email} alt="icon"></img>
-              </a>
+            <a href="mailto:joshlawlor1@gmail.com">
+            <img  className="contactIcon" src={email} alt="email" />
+          </a>
             </li>
           </div>
           {/* <p className="nintendo-font">
@@ -103,7 +103,7 @@ function HomePage() {
           <img className="profilePhoto" src={profile} alt="profile" />
         </div>
 
-
+{/* 
         <div className="skillsBox">
         <h2 className="skillsTitle">Tech Stack</h2>
         <div className="skills">
@@ -148,9 +148,8 @@ function HomePage() {
           <img className="icons" src={HEROKU} alt="icon"></img>
         </li>
       </div>
-        </div>
+        </div> */}
         
-      <div className="projects"></div>
 
       </div>
 
