@@ -5,7 +5,7 @@
   align-items: center;
 position: relative;
   
-overflow-x: hidden;
+overflow: hidden;
 
 }
 
@@ -39,6 +39,36 @@ overflow-x: hidden;
     } */
 
   
+}
+
+@keyframes loadRight {
+  0%, 
+  100% {
+    transform: translate(50%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}
+
+@keyframes loadLeft {
+  0%, 
+  100% {
+    transform: translate(-50%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}
+
+@keyframes loadBar {
+  0%, 
+  100% {
+    transform: translate(-100%);
+  }
+  100% {
+    transform: translate(0%);
+  }
 }
 
 .App-logo {

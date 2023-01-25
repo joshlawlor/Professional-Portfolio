@@ -1,13 +1,16 @@
 .aboutMain {
     height: 85%;
     display: flex;
+    overflow: hidden;
 }
 
 .aboutSideBar {
       /* border: 3px solid grey; */
       max-width: 6%;
       /* min-height: 86vh; */
-  
+      animation: loadBar 1s linear 500ms 1;
+      animation-fill-mode: both;
+
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -27,6 +30,8 @@
     flex-direction: column;
     align-items: center;
     overflow: auto;
+    animation: loadRight .7s linear 1ms 1;
+    animation-fill-mode: both;
 }
 
 

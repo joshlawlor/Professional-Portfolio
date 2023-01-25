@@ -2,8 +2,9 @@
   min-width: 100vh;
   min-height: 85%;
   margin-bottom: 1%;
-
+    overflow: hidden;
   /* border: 3px solid red; */
+  
   display: flex;
 }
 
@@ -11,10 +12,13 @@
       /* border: 3px solid grey; */
       max-width: 6%;
       /* min-height: 86vh; */
-  
+      animation: loadBar 1s linear 500ms 1;
+      animation-fill-mode: both;
+
       display: flex;
       flex-direction: column;
       justify-content: center;
+
 }
 
 .brandIconSide {
@@ -34,6 +38,8 @@
     /* border: 3px solid blue; */
     min-width: 94%;
     min-height: 100%;
+    animation: loadRight .7s linear 1ms 1;
+    animation-fill-mode: both;
 }
 
 .title {

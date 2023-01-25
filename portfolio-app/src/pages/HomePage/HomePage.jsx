@@ -21,6 +21,7 @@ import GIT from "../../assets/images/git.png";
 import C from "../../assets/images/csharp.png";
 import HEROKU from "../../assets/images/heroku.png";
 import POWER from "../../assets/images/power.webp";
+import cloudTitle from "../../assets/images/cloudTitle.png"
 
 function HomePage() {
 
@@ -32,6 +33,9 @@ function HomePage() {
   return (
       <div className="aboutContainer">
         <div className="about">
+          {/* <div className="cloud">
+            <img className="cloudTitle" src={cloudTitle}></img>
+          </div> */}
           <div>
             <h1 className="aboutTitle">Joshua Lawlor</h1>
             <p className="proFont">Full-Stack Software Engineer</p>
@@ -68,7 +72,7 @@ function HomePage() {
               .pauseFor().start();
             }}/>
             </p> */}
-
+{/* 
           <div className="bioBox">
             <div className="bioHeader">
               <p className="powershell">
@@ -97,7 +101,7 @@ function HomePage() {
             
             </div>
             
-          </div>
+          </div> */}
         </div>
         <div className="photo">
           <img className="profilePhoto" src={profile} alt="profile" />

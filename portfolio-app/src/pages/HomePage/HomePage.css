@@ -1,117 +1,114 @@
-
-  .email {
-    list-style: none;
-    height: 3vh;
-  }
-
-
-
-
-
-.contactIcon{
-    height: 5vh;
+.email {
+  list-style: none;
+  height: 3vh;
 }
 
-
-.skillsBox{
-    /* border: 3px solid red; */
-    
-    margin-top: 1%;
-    margin-bottom: 1%;
-    height: 75vh;
-    min-width: 8%;
-    padding-right: 0%;
-    overflow: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.contactIcon {
+  height: 5vh;
 }
 
-.skillsTitle{
-    margin-top: 20%;
-    font-family: 'Press Start 2P', cursive;
-    font-size: large;
-    color: #75c1fe;
-    /* border: 3px solid blue; */
-    min-width: 20%;
-    max-width: 100%;
+.skillsBox {
+  /* border: 3px solid red; */
 
+  margin-top: 1%;
+  margin-bottom: 1%;
+  height: 75vh;
+  min-width: 8%;
+  padding-right: 0%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skillsTitle {
+  margin-top: 20%;
+  font-family: "Press Start 2P", cursive;
+  font-size: large;
+  color: #75c1fe;
+  /* border: 3px solid blue; */
+  min-width: 20%;
+  max-width: 100%;
 }
 
 .skills {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-.icons{
-    height: 9vh;
-    margin: 0;
-    padding: 0px;
-    
+.icons {
+  height: 9vh;
+  margin: 0;
+  padding: 0px;
 }
 
 .smallIcon {
-    height: 1.4vh;
+  height: 1.4vh;
 }
-
-
-
-
 
 .aboutContainer {
-    /* border: 3px solid black; */
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    min-width: 40vw;
-    min-height: 50vh;
-    max-height: 85vh;
+  /* border: 3px solid black; */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  min-width: 40vw;
+  min-height: 50vh;
+  max-height: 85vh;
 }
 
-
 .about {
-    /* border: 3px solid green; */
-    /* min-width: 55%; */
-    max-width: 56%;
-    max-height: 100vh;
-    /* overflow: auto; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 5%;
+  /* border: 3px solid green; */
+  /* min-width: 55%; */
+  max-width: 100%;
+  max-height: 100vh;
+  /* overflow: auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5%;
+  animation: loadLeft 1s linear 1ms 1;
+  animation-fill-mode: both;
+
+}
+
+.cloudTitle {
+    z-index: -100;
+    width: 200px;
+    height: 100%;
 }
 
 .aboutTitle {
-    /* border: 3px solid red; */
-    font-family: 'Press Start 2P', cursive;
-    font-size: 6.3vh;
-    min-width: 15vw;
-    color: #75c1fe;
+  /* border: 3px solid red; */
+  font-family: "Press Start 2P", cursive;
+  font-size: 6.3vh;
+  min-width: 45vw;
+  color: #75c1fe;
 }
 
 .proFont {
-    font-family: 'Syncopate', sans-serif;
-    color: #75c1fe;
+  font-family: "Syncopate", sans-serif;
+  color: #75c1fe;
 }
 
-
-
-.proLinks{
-    /* border: 3px solid red; */
-    display: flex;
-    justify-content: center;
+.proLinks {
+  /* border: 3px solid red; */
+  display: flex;
+  justify-content: center;
 }
 
 .photo {
-    /* border: 3px solid yellow; */
-    min-width: 35%;
-    max-width: 85%;
-    min-height: 40%;
-    max-height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* margin-left: 6%;
+  /* border: 3px solid yellow; */
+  background-color: transparent;
+  min-width: 35%;
+  max-width: 85%;
+  min-height: 40%;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: loadRight 1s linear 1ms 1;
+  /* margin-left: 6%;
     margin-right: 6%;
     margin-top: .5%;
     margin-bottom: .5%;
@@ -121,103 +118,98 @@
 
 
 
+
+
 /*  */
 
-
 li {
-    display: inline-block;
-    
+  display: inline-block;
 }
 
-li a{
-    display: block;
-    color: rgb(2, 1, 1);
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
+li a {
+  display: block;
+  color: rgb(2, 1, 1);
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
 }
-    
-li a:hover{
-    border-radius: 100%;
+
+li a:hover {
+  border-radius: 100%;
 }
-    
 
 img {
-    max-width: 100%;
-    min-height: 70%;
-    max-height: 85%;
-    border-radius: 10%;
-    margin-bottom: 10%;
-    
+  max-width: 100%;
+  min-height: 70%;
+  max-height: 85%;
+  border-radius: 10%;
+  margin-bottom: 10%;
 }
 
 .profilePhoto {
-    max-width: 100%;
-    min-height: 70%;
-    max-height: 85%;
-    border-radius: 10%;
-    margin-bottom: 10%;
-
+  max-width: 100%;
+  min-height: 70%;
+  max-height: 85%;
+  border-radius: 10%;
+  margin-bottom: 10%;
 }
 
 .bioBox {
-    width: 70vw;
-    max-width: 80%;
-    min-height: 40%;
-    max-height: 45%;
-    margin-top: 5%;
-    overflow: auto;
-    background-color: #012456;
-    color: white;
-    /* border: 3px solid black; */
-    font-family: 'Roboto Mono', monospace;    font-size: 1.2vh;
-    display: flex;
-    flex-direction: column;
+  width: 70vw;
+  max-width: 80%;
+  min-height: 40%;
+  max-height: 45%;
+  margin-top: 5%;
+  overflow: auto;
+  background-color: #012456;
+  color: white;
+  /* border: 3px solid black; */
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.2vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .bioHeader {
-    /* border: 3px solid green; */
+  /* border: 3px solid green; */
 
-    background-color: rgb(231, 229, 229);
-    min-width: 80%;
-    min-height: 10%;
-    color: black;
-    padding: 3.5px;
-    display: flex;
-    align-items: flex-start;
-    text-align: center;
+  background-color: rgb(231, 229, 229);
+  min-width: 80%;
+  min-height: 10%;
+  color: black;
+  padding: 3.5px;
+  display: flex;
+  align-items: flex-start;
+  text-align: center;
 }
-.powershell{
-    /* float: left; */
-    font-family: 'Roboto Mono', monospace;
-    color: black;
+.powershell {
+  /* float: left; */
+  font-family: "Roboto Mono", monospace;
+  color: black;
 }
-
 
 .bioTextBox {
-    /* border: 3px solid red; */
-    display: flex;
-    text-align: left;
-    /* width: 99%; */
-    margin-left: 1%;
-    margin-right: 1%;
-    font-size: small;
-    flex-direction: column;
-    align-items: flex-start;
-    
-    /* justify-content: flex-start; */
+  /* border: 3px solid red; */
+  display: flex;
+  text-align: left;
+  /* width: 99%; */
+  margin-left: 1%;
+  margin-right: 1%;
+  font-size: small;
+  flex-direction: column;
+  align-items: flex-start;
 
+  /* justify-content: flex-start; */
 }
-
 
 .bioTitle {
-    float: left;
-    display: flex;
-    min-width: 80%;
-    /* border: 3px solid red; */
+  float: left;
+  display: flex;
+  min-width: 80%;
+  /* border: 3px solid red; */
 }
 
-.bioText{
-    float: left;
-    display: flex;
+.bioText {
+  float: left;
+  display: flex;
 }

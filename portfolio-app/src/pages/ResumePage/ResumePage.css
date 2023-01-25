@@ -2,13 +2,16 @@
     /* border: 3px solid red; */
     max-height: 85%;
     display: flex;
+    overflow: hidden;
 }
 
 .resumeSidebar {
         /* border: 3px solid grey; */
         max-width: 6%;
         /* min-height: 86vh; */
-    
+        animation: loadBar 1s linear 500ms 1;
+        animation-fill-mode: both;
+
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -16,6 +19,8 @@
 
 .displayBox {
     /* border: 5px solid purple; */
+    animation: loadRight .7s linear 1ms 1;
+    animation-fill-mode: both;
     margin-right: 0%;
     min-width: 90%;
     max-height: 80%;

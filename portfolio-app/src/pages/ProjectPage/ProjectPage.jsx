@@ -33,6 +33,7 @@ import portfolio5 from "../../assets/images/portfolio5.png";
 //BOOTSTRAP
 import { Card, Carousel, Modal, Container, Accordion } from "react-bootstrap";
 
+
 function ProjectPage() {
   const [p1Show, set1Show] = React.useState(false);
   const [p2Show, set2Show] = React.useState(false);
