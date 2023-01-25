@@ -21,44 +21,54 @@ import GIT from "../../assets/images/git.png";
 import C from "../../assets/images/csharp.png";
 import HEROKU from "../../assets/images/heroku.png";
 import POWER from "../../assets/images/power.webp";
-import cloudTitle from "../../assets/images/cloudTitle.png"
+import cloudTitle from "../../assets/images/cloudTitle.png";
 
 function HomePage() {
-
-  var bio = document.getElementById('bioTextBox')
+  var bio = document.getElementById("bioTextBox");
 
   const typewriter = new Typewriter(bio, {
-    delay: 50
-  })
+    delay: 50,
+    hideCursorAfterText: true
+  });
   return (
-      <div className="aboutContainer">
-        <div className="about">
-          {/* <div className="cloud">
+    <div className="aboutContainer">
+      <div className="about">
+        {/* <div className="cloud">
             <img className="cloudTitle" src={cloudTitle}></img>
           </div> */}
-          <div>
-            <h1 className="aboutTitle">Joshua Lawlor</h1>
-            <p className="proFont">Full-Stack Software Engineer</p>
-          </div>
+        <div>
+          <h1 className="aboutTitle">Joshua Lawlor</h1>
+          <p className="proFont">
+            <Typewriter
+              options={{
+                delay: 50
+              }}
+              onInit={(typewriter) => {
+                typewriter.pauseFor('1300').typeString("Full-Stack Software Engineer")
+                .start();
+              }}
+            />
+          </p>
+        </div>
 
-          <div className="proLinks">
-            <li>
-              <a href="https://github.com/joshlawlor">
-                <img className="contactIcon" src={github} alt="icon"></img>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/joshuaryanlawlor/">
-                <img className="contactIcon" src={linkedin} alt="icon"></img>
-              </a>
-            </li>
-            <li>
+        <div className="proLinks">
+          <li>
+            <a href="https://github.com/joshlawlor">
+              <img className="contactIcon" src={github} alt="icon"></img>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/joshuaryanlawlor/">
+              <img className="contactIcon" src={linkedin} alt="icon"></img>
+            </a>
+          </li>
+          <li>
             <a href="mailto:joshlawlor1@gmail.com">
-            <img  className="contactIcon" src={email} alt="email" />
-          </a>
-            </li>
-          </div>
-          {/* <p className="nintendo-font">
+              <img className="contactIcon" src={email} alt="email" />
+            </a>
+          </li>
+        </div>
+        {/* <p className="nintendo-font">
             <Typewriter
             options={{
               delay: 40
@@ -72,7 +82,7 @@ function HomePage() {
               .pauseFor().start();
             }}/>
             </p> */}
-{/* 
+        {/* 
           <div className="bioBox">
             <div className="bioHeader">
               <p className="powershell">
@@ -102,12 +112,12 @@ function HomePage() {
             </div>
             
           </div> */}
-        </div>
-        <div className="photo">
-          <img className="profilePhoto" src={profile} alt="profile" />
-        </div>
+      </div>
+      <div className="photo">
+        <img className="profilePhoto" src={profile} alt="profile" />
+      </div>
 
-{/* 
+      {/* 
         <div className="skillsBox">
         <h2 className="skillsTitle">Tech Stack</h2>
         <div className="skills">
@@ -153,12 +163,7 @@ function HomePage() {
         </li>
       </div>
         </div> */}
-        
-
-      </div>
-
-
-    
+    </div>
   );
 }
 
