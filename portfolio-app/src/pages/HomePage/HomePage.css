@@ -67,7 +67,7 @@
   align-items: center;
   justify-content: center;
   padding-bottom: 5%;
-  animation: loadLeft 1s linear 1ms 1;
+  animation: loadLeft .7s linear 1ms 1;
   animation-fill-mode: both;
 
 }
@@ -107,7 +107,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: loadRight 1s linear 1ms 1;
+  animation: loadRight .7s linear 1ms 1;
   /* margin-left: 6%;
     margin-right: 6%;
     margin-top: .5%;

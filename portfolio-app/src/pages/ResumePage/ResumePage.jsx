@@ -2,13 +2,10 @@ import React from "react";
 import "./ResumePage.css";
 import { Link } from "react-router-dom";
 
-import { Document, Page } from "react-pdf/dist/esm/entry.webpack5";
-import resumePDF from "../../assets/files/resume.pdf"
-import resume from "../../assets/images/resume1.jpg"
 import linkedin from "../../assets/images/linkedin.png";
 import github from "../../assets/images/githubicon.png";
 import email from "../../assets/images/email.png";
-import resumeIcon from "../../assets/images/resumeIcon.png"
+import resumeIcon from "../../assets/images/resumeIcon.png";
 import JS from "../../assets/images/JS.png";
 import CSS from "../../assets/images/css.png";
 import HTML from "../../assets/images/html.png";
@@ -24,9 +21,10 @@ import C from "../../assets/images/csharp.png";
 import HEROKU from "../../assets/images/heroku.png";
 import POWER from "../../assets/images/power.webp";
 import EXPRESS from "../../assets/images/express.png";
-import MATERIALIZE from "../../assets/images/materialize.png"
-import TAILWIND from "../../assets/images/tailwind.png"
-import BOOTSTRAP from "../../assets/images/bootstrap.png"
+import MATERIALIZE from "../../assets/images/materialize.png";
+import TAILWIND from "../../assets/images/tailwind.png";
+import BOOTSTRAP from "../../assets/images/bootstrap.png";
+import resume from "../../assets/files/JoshuaLawlorResume.pdf";
 function ResumePage() {
   return (
     <div className="resumeMain">
@@ -36,30 +34,27 @@ function ResumePage() {
         </a> */}
 
         <li className="icons">
-        <a href="https://github.com/joshlawlor">
-          <img src={github} alt="github" />
+          <a href="https://github.com/joshlawlor">
+            <img src={github} alt="github" />
           </a>
         </li>
         <li className="icons">
-        <a href="https://www.linkedin.com/in/joshuaryanlawlor/">
-          <img src={linkedin} alt="linkedin" />
+          <a href="https://www.linkedin.com/in/joshuaryanlawlor/">
+            <img src={linkedin} alt="linkedin" />
           </a>
         </li>
         <li className="icons">
-        <a href="mailto:joshlawlor1@gmail.com">
-          <img src={email} alt="email" />
+          <a href="mailto:joshlawlor1@gmail.com">
+            <img src={email} alt="email" />
           </a>
         </li>
       </div>
       <div className="displayBox">
-
         <div className="techMain">
-
           <div className="techTitle">
             <h4 className="">Front end tech skills</h4>
           </div>
           <div className="techBox">
-
             <div className="techItems">
               <li>
                 <img className="resumeIcons" src={JS} alt="icon"></img>
@@ -110,17 +105,17 @@ function ResumePage() {
           </div>
           <div className="techBox">
             <div className="techItems">
-            <li>
+              <li>
                 <img className="resumeIcons" src={BOOTSTRAP} alt="icon"></img>
               </li>
-            <li>
+              <li>
                 <img className="resumeIcons" src={TAILWIND} alt="icon"></img>
               </li>
-          
-            <li>
+
+              <li>
                 <img className="resumeIcons" src={MATERIALIZE} alt="icon"></img>
               </li>
-    
+
               <li>
                 <img className="resumeIcons" src={PYTHON} alt="icon"></img>
               </li>
@@ -130,21 +125,18 @@ function ResumePage() {
               <li>
                 <img className="resumeIcons" src={C} alt="icon"></img>
               </li>
-              
-              
             </div>
           </div>
         </div>
-<div className="resumeBox">
-    <h4 className="nintendo-font">Resume Download:     <Link to="public\files\JoshuaLawlorResume.pdf" target="_blank" download><img  className="downloadIcon" src={resumeIcon}></img></Link>
-</h4>
-    
-
+        <div className="resumeBox">
+          <h4 className="nintendo-font">
+            Resume Download:
+            <a href={resume} download="JoshuaLawlorResume">
+              <img className="downloadIcon" src={resumeIcon}></img>
+            </a>
+          </h4>
+        </div>
       </div>
-    
-        
-      </div>
-      
     </div>
   );
 }
