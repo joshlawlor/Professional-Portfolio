@@ -61,7 +61,6 @@ function ResumePage() {
         </li>
       </div>
 
-        <Suspense fallback={<div>HUIIIIIIIIIIII</div>}>
 
         
       <LazyLoadComponent 
@@ -230,7 +229,6 @@ function ResumePage() {
         </div>
       </div>
       </LazyLoadComponent>
-      </Suspense>
     </div>
   );
 }

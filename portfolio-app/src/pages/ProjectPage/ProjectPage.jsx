@@ -33,12 +33,20 @@ import portfolio5 from "../../assets/images/portfolio5.png";
 //BOOTSTRAP
 import { Card, Carousel, Modal, Container, Accordion } from "react-bootstrap";
 
+import CustomModal from "../../components/Modal";
+import Bugbuddy from "../../components/Bugbuddy";
 
 function ProjectPage() {
   const [p1Show, set1Show] = React.useState(false);
   const [p2Show, set2Show] = React.useState(false);
   const [p3Show, set3Show] = React.useState(false);
   const [p4Show, set4Show] = React.useState(false);
+
+  const P1 = () => {
+    return(
+      <h1>Hello</h1>
+    )
+  }
 
   return (
     <div className="projectMain">
@@ -68,47 +76,54 @@ function ProjectPage() {
         <div className="title">
           <h1 className="nintendo-font">Web Applications</h1>
         </div>
-
         <div className="gallery">
           <div className="project">
-            <img
+          <CustomModal props='bugbuddy'>
+          </CustomModal>
+            {/* <img
               onClick={() => set1Show(true)}
               style={{ "pointer-events": "all" }}
               className="folder"
               src={folder}
               alt="folder"
             ></img>
-            <h2 className="projectTitle">Bugbuddy</h2>
+            <h2 className="projectTitle">Bugbuddy</h2> */}
           </div>
           <div className="project">
-            <img
+          <CustomModal props='bugbuddy2'></CustomModal>
+
+            {/* <img
               onClick={() => set2Show(true)}
               style={{ "pointer-events": "all" }}
               className="folder"
               src={folder}
               alt="folder"
             ></img>
-            <h2 className="projectTitle">Bugbuddy 2.0</h2>
+            <h2 className="projectTitle">Bugbuddy 2.0</h2> */}
           </div>
           <div className="project">
-            <img
+          <CustomModal props='portfolio'></CustomModal>
+
+            {/* <img
               onClick={() => set3Show(true)}
               style={{ "pointer-events": "all" }}
               className="folder"
               src={folder}
               alt="folder"
             ></img>
-            <h2 className="projectTitle">Portfolio 1.0</h2>
+            <h2 className="projectTitle">Portfolio 1.0</h2> */}
           </div>
           <div className="project">
-            <img
+          <CustomModal props='movieApp'></CustomModal>
+
+            {/* <img
               onClick={() => set4Show(true)}
               style={{ "pointer-events": "all" }}
               className="folder"
               src={folder}
               alt="folder"
             ></img>
-            <h2 className="projectTitle">Movie App</h2>
+            <h2 className="projectTitle">Movie App</h2> */}
           </div>
         </div>
       </div>
@@ -120,6 +135,7 @@ function ProjectPage() {
         onHide={() => set1Show(false)}
         size="lg"
         aria-labelledby="contained-modal-title-vcenter"
+        contentClassName="modalBox"
         centered
       >
         <Modal.Header closeButton>
