@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import "./ResumePage.css";
 import { Link } from "react-router-dom";
 
@@ -24,8 +24,19 @@ import EXPRESS from "../../assets/images/express.png";
 import MATERIALIZE from "../../assets/images/materialize.png";
 import TAILWIND from "../../assets/images/tailwind.png";
 import BOOTSTRAP from "../../assets/images/bootstrap.png";
+import TYPESCRIPT from "../../assets/images/typescript.png"
 import resume from "../../assets/files/JoshuaLawlorResume.pdf";
+
+
+import { LazyLoadComponent, LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+
+
+
+
 function ResumePage() {
+
+
   return (
     <div className="resumeMain">
       <div className="resumeSidebar">
@@ -49,6 +60,12 @@ function ResumePage() {
           </a>
         </li>
       </div>
+
+        <Suspense fallback={<div>HUIIIIIIIIIIII</div>}>
+
+        
+      <LazyLoadComponent 
+      visibleByDefault={false}>
       <div className="displayBox">
         <div className="techMain">
           <div className="techTitle">
@@ -57,22 +74,67 @@ function ResumePage() {
           <div className="techBox">
             <div className="techItems">
               <li>
-                <img className="resumeIcons" src={JS} alt="icon"></img>
+                <LazyLoadImage
+                  loading="lazy"
+                  className="resumeIcons"
+                  threshold={0.05}
+                  src={JS}
+                  alt="icon"
+                  visibleByDefault={true}
+                  effect="blur"
+                />
+              </li>
+             
+              <li>
+                <LazyLoadImage
+                  loading="lazy"
+                  className="resumeIcons"
+                  threshold={0.05}
+
+                  src={CSS}
+                  alt="icon"
+                  visibleByDefault={false}
+                  // effect="blur"
+                />
               </li>
               <li>
-                <img className="resumeIcons" src={CSS} alt="icon"></img>
+                <LazyLoadImage
+                  loading="lazy"
+                  className="resumeIcons"
+                  src={HTML}
+                  alt="icon"
+                  visibleByDefault={false}
+                  // effect="blur"
+                />
               </li>
               <li>
-                <img className="resumeIcons" src={HTML} alt="icon"></img>
+                <LazyLoadImage
+                  loading="lazy"
+                  className="resumeIcons"
+                  threshold={0.05}
+                  src={TYPESCRIPT}
+                  alt="icon"
+                  visibleByDefault={false}
+                />
               </li>
               <li>
-                <img className="resumeIcons" src={REACT} alt="icon"></img>
+                <LazyLoadImage
+                  loading="lazy"
+                  className="resumeIcons"
+                  src={REACT}
+                  alt="icon"
+                  visibleByDefault={false}
+                />
               </li>
+             
               <li>
-                <img className="resumeIcons" src={GIT} alt="icon"></img>
-              </li>
-              <li>
-                <img className="resumeIcons" src={HEROKU} alt="icon"></img>
+                <LazyLoadImage
+                  loading="lazy"
+                  className="resumeIcons"
+                  src={HEROKU}
+                  alt="icon"
+                  visibleByDefault={false}
+                />
               </li>
             </div>
           </div>
@@ -83,19 +145,49 @@ function ResumePage() {
           <div className="techBox">
             <div className="techItems">
               <li>
-                <img className="resumeIcons" src={NODE} alt="icon"></img>
+                <LazyLoadImage
+                  loading="lazy"
+                  className="resumeIcons"
+                  src={NODE}
+                  alt="icon"
+                  visibleByDefault={false}
+                />
               </li>
               <li>
-                <img className="resumeIcons" src={EXPRESS} alt="icon"></img>
+              <LazyLoadImage
+                  loading="lazy"
+                  className="resumeIcons"
+                  src={EXPRESS}
+                  alt="icon"
+                  visibleByDefault={false}
+                />
               </li>
               <li>
-                <img className="resumeIcons" src={MONGO} alt="icon"></img>
+              <LazyLoadImage
+                  loading="lazy"
+                  className="resumeIcons"
+                  src={MONGO}
+                  alt="icon"
+                  visibleByDefault={false}
+                />
               </li>
               <li>
-                <img className="resumeIcons" src={SQL} alt="icon"></img>
+              <LazyLoadImage
+                  loading="lazy"
+                  className="resumeIcons"
+                  src={SQL}
+                  alt="icon"
+                  visibleByDefault={false}
+                />
               </li>
               <li>
-                <img className="resumeIcons" src={POSTMAN} alt="icon"></img>
+              <LazyLoadImage
+                  loading="lazy"
+                  className="resumeIcons"
+                  src={POSTMAN}
+                  alt="icon"
+                  visibleByDefault={false}
+                />
               </li>
             </div>
           </div>
@@ -106,7 +198,7 @@ function ResumePage() {
           <div className="techBox">
             <div className="techItems">
               <li>
-                <img className="resumeIcons" src={BOOTSTRAP} alt="icon"></img>
+                <img  className="resumeIcons" src={BOOTSTRAP} alt="icon"></img>
               </li>
               <li>
                 <img className="resumeIcons" src={TAILWIND} alt="icon"></img>
@@ -137,6 +229,8 @@ function ResumePage() {
           </h4>
         </div>
       </div>
+      </LazyLoadComponent>
+      </Suspense>
     </div>
   );
 }

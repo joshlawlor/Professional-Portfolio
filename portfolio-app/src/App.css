@@ -41,6 +41,26 @@ overflow: hidden;
   
 }
 
+
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(10deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50%{
+    transform: rotate(20deg);
+  }
+  75%{
+    transform: rotate(-5deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
 @keyframes loadRight {
   0%, 
   100% {
@@ -68,6 +88,15 @@ overflow: hidden;
   }
   100% {
     transform: translate(0%);
+  }
+}
+
+@keyframes loadIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 

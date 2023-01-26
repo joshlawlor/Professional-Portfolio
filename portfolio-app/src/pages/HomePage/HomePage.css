@@ -7,6 +7,10 @@
   height: 5vh;
 }
 
+.contactIcon:hover {
+  animation: wiggle 1000ms linear 1;
+}
+
 .skillsBox {
   /* border: 3px solid red; */
 
@@ -39,6 +43,11 @@
   height: 9vh;
   margin: 0;
   padding: 0px;
+}
+
+
+.icons:hover {
+  animation: wiggle 1000ms linear 1;
 }
 
 .smallIcon {

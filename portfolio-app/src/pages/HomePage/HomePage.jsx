@@ -23,6 +23,9 @@ import HEROKU from "../../assets/images/heroku.png";
 import POWER from "../../assets/images/power.webp";
 import cloudTitle from "../../assets/images/cloudTitle.png";
 
+import { LazyLoadComponent } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+
 function HomePage() {
   var bio = document.getElementById("bioTextBox");
 
@@ -32,6 +35,10 @@ function HomePage() {
   });
   return (
     <div className="aboutContainer">
+
+      <LazyLoadComponent>
+        
+      
       <div className="about">
         {/* <div className="cloud">
             <img className="cloudTitle" src={cloudTitle}></img>
@@ -113,9 +120,12 @@ function HomePage() {
             
           </div> */}
       </div>
+      </LazyLoadComponent>
+      
+      <LazyLoadComponent>
       <div className="photo">
         <img className="profilePhoto" src={profile} alt="profile" />
-      </div>
+      </div></LazyLoadComponent>
 
       {/* 
         <div className="skillsBox">
