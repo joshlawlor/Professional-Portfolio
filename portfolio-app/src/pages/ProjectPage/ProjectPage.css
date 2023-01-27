@@ -79,6 +79,47 @@
     min-width: 100%;
 }
 
+#tab{
+
+}
+
+.folder-tab {
+    height: 36px;
+    position: relative;
+    width: 300px;
+    top: 26px;
+    background-color: #ffe177;
+    left: 10px;
+    display: inline-block;
+    z-index: 2;
+    content: "";
+    margin-right: 50px;
+    border-radius: 10px 10px 0px 0px;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    text-align:center;
+}
+
+
+#folderPage {
+    border-radius: 10px 10px 0px 0px;
+
+    border: 3px solid black;
+    background-color: #ffe177;
+    height: 100vh;
+    position: relative;
+    top: 10px;
+}
+
+#folderHeader {
+    /* border: 3px solid black; */
+    min-height: 2%;
+    display: flex;
+    justify-content: right;
+}
+
+
 .folder {
     height: 25vh;
     margin-bottom: -5%;
@@ -108,6 +149,12 @@
         transform:  translate3d(4px, 0, 0);
     }
 }
+
+
+
+
+
+
 
 .projectTitle{
     font-family: 'Press Start 2P', cursive; 

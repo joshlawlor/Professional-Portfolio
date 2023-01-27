@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
+import '../pages/ProjectPage/ProjectPage.css'
 
 import folder from "../assets/images/folder.png";
 
-import { Container, Card, Carousel } from "react-bootstrap";
-import bug1 from "../assets/images/bug1.png";
-import bug2 from "../assets/images/bug2.png";
-import bug3 from "../assets/images/bug3.png";
-import bug4 from "../assets/images/bug4.png";
-import bug5 from "../assets/images/bug5.png";
+import Bugbuddy from "./projects/Bugbuddy";
+import Bugbuddy2 from "./projects/Bugbuddy2";
+import Portfolio from "./projects/Portfolio";
+import Movieapp from "./projects/Movieapp";
 
 function CustomModal({ props }) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -22,13 +21,22 @@ function CustomModal({ props }) {
   };
 
   const customStyles = {
+    overlay: {
+      border: "3px solid blue",
+    },
     content: {
-        top: '5%',
-        left: '20%',
-        right: '20%',    
-        backgroundColor : '#ffe177',
-        }
-  }
+      borderRadius: "25px",
+      top: "5%",
+      left: "20%",
+      right: "20%",
+      bottom: "20%",
+      border: 'none',
+      backgroundColor: 'transparent',
+      display: "flex",
+      flexDirection: "column",
+      overflow: "hidden"
+    },
+  };
 
   console.log(props);
   const project = props;
@@ -44,41 +52,38 @@ function CustomModal({ props }) {
           alt="folder"
         ></img>
         <h2 className="projectTitle">Bugbuddy</h2>
-        <Modal onRequestClose={()=> setModalIsOpen(false)} style={customStyles} isOpen={modalIsOpen}>
-          <button onClick={setModalIsOpenToFalse}>X</button>
-          <h1>Project 1</h1>
-          <Container className="projectContainer">
-            <Card>
-            <Card.Body>
-                <Card.Title>A debugging forum app!</Card.Title>
-                <Card.Subtitle><a href="https://bugbuddy.netlify.app/">Live Link</a> <a href="https://github.com/joshlawlor/BugBuddy-2.0">Github Repository</a> </Card.Subtitle>
-            </Card.Body>
-                <Carousel>
-                  <Carousel.Item>
-                    <img src={bug1} alt="1"></img>
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img src={bug2} alt="1"></img>
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img src={bug3} alt="1"></img>
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img src={bug4} alt="1"></img>
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img src={bug5} alt="1"></img>
-                  </Carousel.Item>
-                </Carousel>
-            </Card>
-          </Container>
+        <Modal
+          onRequestClose={() => setModalIsOpen(false)}
+          style={customStyles}
+          isOpen={modalIsOpen}
+        >
+          <div className="folderMain">
+            <nav id="tab">
+              <div className="folder-tab">
+              <h1>Bugbuddy</h1>
+              </div>
+              
+            </nav>
+            <div id="folderPage">
+                <div id="folderHeader">
+                <button className="exitModal" onClick={setModalIsOpenToFalse}>X</button>
+
+                </div>
+                <div id="folderContent">
+
+                </div>
+
+            <Bugbuddy />
+            </div>
+          </div>
+          
         </Modal>
       </>
     );
   } else if (project == "bugbuddy2") {
     return (
       <>
-       <img
+        <img
           onClick={setModalIsOpenToTrue}
           src={folder}
           style={{ "pointer-events": "all" }}
@@ -87,16 +92,37 @@ function CustomModal({ props }) {
         ></img>
         <h2 className="projectTitle">Bugbuddy 2.0</h2>
 
-        <Modal isOpen={modalIsOpen}>
-          <button onClick={setModalIsOpenToFalse}>X</button>
-          <h1>Project 2</h1>
+        <Modal
+          onRequestClose={() => setModalIsOpen(false)}
+          style={customStyles}
+          isOpen={modalIsOpen}
+        >
+          <div className="folderMain">
+            <nav id="tab">
+              <div className="folder-tab">
+              <h1>Bugbuddy</h1>
+              </div>
+              
+            </nav>
+            <div id="folderPage">
+                <div id="folderHeader">
+                <button className="exitModal" onClick={setModalIsOpenToFalse}>X</button>
+
+                </div>
+                <div id="folderContent">
+
+                </div>
+
+            <Bugbuddy2 />
+            </div>
+          </div>
         </Modal>
       </>
     );
   } else if (project == "portfolio") {
     return (
       <>
-       <img
+        <img
           onClick={setModalIsOpenToTrue}
           src={folder}
           style={{ "pointer-events": "all" }}
@@ -105,17 +131,37 @@ function CustomModal({ props }) {
         ></img>
         <h2 className="projectTitle">Portfolio 1.0</h2>
 
-        <Modal isOpen={modalIsOpen}>
-          <button onClick={setModalIsOpenToFalse}>X</button>
-          <h1>Project 2</h1>
+        <Modal
+          onRequestClose={() => setModalIsOpen(false)}
+          style={customStyles}
+          isOpen={modalIsOpen}
+        >
+           <div className="folderMain">
+            <nav id="tab">
+              <div className="folder-tab">
+              <h1>Bugbuddy</h1>
+              </div>
+              
+            </nav>
+            <div id="folderPage">
+                <div id="folderHeader">
+                <button className="exitModal" onClick={setModalIsOpenToFalse}>X</button>
+
+                </div>
+                <div id="folderContent">
+
+                </div>
+
+            <Portfolio />
+            </div>
+          </div>
         </Modal>
       </>
     );
-  }
-  else if (project == "movieApp") {
+  } else if (project == "movieApp") {
     return (
       <>
-       <img
+        <img
           onClick={setModalIsOpenToTrue}
           src={folder}
           style={{ "pointer-events": "all" }}
@@ -124,9 +170,30 @@ function CustomModal({ props }) {
         ></img>
         <h2 className="projectTitle">Movie App</h2>
 
-        <Modal isOpen={modalIsOpen}>
-          <button onClick={setModalIsOpenToFalse}>X</button>
-          <h1>Project 2</h1>
+        <Modal
+          onRequestClose={() => setModalIsOpen(false)}
+          style={customStyles}
+          isOpen={modalIsOpen}
+        >
+         <div className="folderMain">
+            <nav id="tab">
+              <div className="folder-tab">
+              <h1>Bugbuddy</h1>
+              </div>
+              
+            </nav>
+            <div id="folderPage">
+                <div id="folderHeader">
+                <button className="exitModal" onClick={setModalIsOpenToFalse}>X</button>
+
+                </div>
+                <div id="folderContent">
+
+                </div>
+
+            <Movieapp />
+            </div>
+          </div>
         </Modal>
       </>
     );
