@@ -22,7 +22,6 @@ function CustomModal({ props }) {
 
   const customStyles = {
     overlay: {
-      border: "3px solid blue",
     },
     content: {
       borderRadius: "25px",

@@ -51,7 +51,8 @@ function HomePage() {
                 delay: 50
               }}
               onInit={(typewriter) => {
-                typewriter.pauseFor('1300').typeString("Full-Stack Software Engineer")
+                typewriter.pauseFor('1000').typeString("Full-Stack Software Engineer").pauseFor('500').deleteAll()
+                .typeString('Adaptable, Creative, Curious')
                 .start();
               }}
             />
