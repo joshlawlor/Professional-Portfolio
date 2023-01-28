@@ -48,11 +48,13 @@ function HomePage() {
           <p className="proFont">
             <Typewriter
               options={{
-                delay: 50
+                delay: 50,
+                loop: true
               }}
               onInit={(typewriter) => {
                 typewriter.pauseFor('1000').typeString("Full-Stack Software Engineer").pauseFor('500').deleteAll()
-                .typeString('Adaptable, Creative, Curious')
+                .typeString('Adaptable, Creative, Curious').pauseFor('500').deleteAll()
+                .typeString("Let's improve and grow together!").pauseFor('800')
                 .start();
               }}
             />
