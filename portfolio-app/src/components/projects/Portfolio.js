@@ -29,18 +29,6 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 function Portfolio() {
   return (
     <Container className="projectContainer">
-      {/* 
-      <Card>
-        <Card.Body>
-          <Card.Title>My first portfolio website</Card.Title>
-          <Card.Subtitle>
-            <a href="https://joshualawlor.netlify.app/">Live Link</a>{" "}
-            <a href="https://github.com/joshlawlor/Portfolio">
-              Github Repository
-            </a>{" "}
-          </Card.Subtitle>
-        </Card.Body>
-      </Card> */}
       <div className="contentMain">
         <div className="contentHeader">
           <h4>
