@@ -59,6 +59,11 @@
    justify-content: space-around;
 }
 
+
+
+/******************* MODAL STYLING BELOW ***********************/
+
+
 .project {
     /* border: 3px solid yellow; */
     width: 35%;
@@ -74,12 +79,19 @@
     width: 1500px;
 }
 
-.projectContainer {
-    /* border: 3px solid red; */
-    min-width: 100%;
+.exitModal {
+    margin: 10px;
 }
 
-#tab{
+.projectContainer {
+    border: 3px solid red;
+    max-width: 120vh;
+}
+
+
+.folderMain{
+    /* border: 3px solid blue; */
+    height: 100vh;
 
 }
 
@@ -107,7 +119,8 @@
 
     border: 3px solid black;
     background-color: #ffe177;
-    height: 100vh;
+    height: 75vh;
+    overflow: auto;
     position: relative;
     top: 10px;
 }
@@ -151,6 +164,20 @@
 }
 
 
+
+.projectIcon {
+    height: 5.5vh;
+    margin: 0;
+    padding: 0;
+}
+.projectIcon:hover{
+    animation: wiggle 1000ms linear 1;
+}
+
+.contentHeader{
+    display: flex;
+    justify-content: space-around;
+}
 
 
 

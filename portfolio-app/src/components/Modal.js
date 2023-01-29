@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { CloseButton } from "react-bootstrap";
 import Modal from "react-modal";
 import '../pages/ProjectPage/ProjectPage.css'
 
@@ -8,6 +9,8 @@ import Bugbuddy from "./projects/Bugbuddy";
 import Bugbuddy2 from "./projects/Bugbuddy2";
 import Portfolio from "./projects/Portfolio";
 import Movieapp from "./projects/Movieapp";
+
+
 
 function CustomModal({ props }) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -33,14 +36,15 @@ function CustomModal({ props }) {
       backgroundColor: 'transparent',
       display: "flex",
       flexDirection: "column",
-      overflow: "hidden"
+      height: "100vh",
+      
     },
   };
 
   console.log(props);
   const project = props;
 
-  if (project == "bugbuddy") {
+  if (project === "bugbuddy") {
     return (
       <>
         <img
@@ -65,7 +69,7 @@ function CustomModal({ props }) {
             </nav>
             <div id="folderPage">
                 <div id="folderHeader">
-                <button className="exitModal" onClick={setModalIsOpenToFalse}>X</button>
+                <CloseButton className="exitModal" onClick={setModalIsOpenToFalse}></CloseButton>
 
                 </div>
                 <div id="folderContent">
@@ -79,7 +83,7 @@ function CustomModal({ props }) {
         </Modal>
       </>
     );
-  } else if (project == "bugbuddy2") {
+  } else if (project === "bugbuddy2") {
     return (
       <>
         <img
@@ -99,13 +103,13 @@ function CustomModal({ props }) {
           <div className="folderMain">
             <nav id="tab">
               <div className="folder-tab">
-              <h1>Bugbuddy</h1>
+              <h1>Bugbuddy 2.0</h1>
               </div>
               
             </nav>
             <div id="folderPage">
                 <div id="folderHeader">
-                <button className="exitModal" onClick={setModalIsOpenToFalse}>X</button>
+                <CloseButton className="exitModal" onClick={setModalIsOpenToFalse}></CloseButton>
 
                 </div>
                 <div id="folderContent">
@@ -118,7 +122,7 @@ function CustomModal({ props }) {
         </Modal>
       </>
     );
-  } else if (project == "portfolio") {
+  } else if (project === "portfolio") {
     return (
       <>
         <img
@@ -138,13 +142,13 @@ function CustomModal({ props }) {
            <div className="folderMain">
             <nav id="tab">
               <div className="folder-tab">
-              <h1>Bugbuddy</h1>
+              <h1>Portfolio 1.0</h1>
               </div>
               
             </nav>
             <div id="folderPage">
                 <div id="folderHeader">
-                <button className="exitModal" onClick={setModalIsOpenToFalse}>X</button>
+                <CloseButton className="exitModal" onClick={setModalIsOpenToFalse}></CloseButton>
 
                 </div>
                 <div id="folderContent">
@@ -157,7 +161,7 @@ function CustomModal({ props }) {
         </Modal>
       </>
     );
-  } else if (project == "movieApp") {
+  } else if (project === "movieApp") {
     return (
       <>
         <img
@@ -177,13 +181,13 @@ function CustomModal({ props }) {
          <div className="folderMain">
             <nav id="tab">
               <div className="folder-tab">
-              <h1>Bugbuddy</h1>
+              <h1>Movie App</h1>
               </div>
               
             </nav>
             <div id="folderPage">
                 <div id="folderHeader">
-                <button className="exitModal" onClick={setModalIsOpenToFalse}>X</button>
+                <CloseButton className="exitModal" onClick={setModalIsOpenToFalse}></CloseButton>
 
                 </div>
                 <div id="folderContent">
