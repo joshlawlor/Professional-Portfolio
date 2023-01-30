@@ -44,12 +44,43 @@ function Portfolio() {
             </a>
           </h4>
         </div>
+        <div>
+        <h4>This was my first attempt at building my own portfolio app. As you can see my experience in styling
+          was not my strong suit. Having said that I believe that my current portfolio shows how much I have
+          grown in my design and CSS skillset.
+        </h4>
+        </div>
+        <Accordion  defaultActiveKey={"1"}>
+        <Accordion.Item  className="accordionMain">
+          <Accordion.Header >Project Screenshots</Accordion.Header>
+          <Accordion.Body>
+            <Carousel>
+              <Carousel.Item>
+                <img src={portfolio1} alt="1"></img>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img src={portfolio2} alt="1"></img>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img src={portfolio3} alt="1"></img>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img src={portfolio4} alt="1"></img>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img src={portfolio5} alt="1"></img>
+              </Carousel.Item>
+            </Carousel>
+          </Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
         <div className="contentLanguages">
           <div className="techBox">
             <h4>
               These are the languages I utilized in creating the front end of my
               application:
             </h4>
+            
             <div className="techItems">
               <li>
                 <LazyLoadImage
@@ -186,30 +217,7 @@ function Portfolio() {
         </div>
       </div>
 
-      <Accordion defaultActiveKey={"1"}>
-        <Accordion.Item>
-          <Accordion.Header>Project Screenshots</Accordion.Header>
-          <Accordion.Body>
-            <Carousel>
-              <Carousel.Item>
-                <img src={portfolio1} alt="1"></img>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img src={portfolio2} alt="1"></img>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img src={portfolio3} alt="1"></img>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img src={portfolio4} alt="1"></img>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img src={portfolio5} alt="1"></img>
-              </Carousel.Item>
-            </Carousel>
-          </Accordion.Body>
-        </Accordion.Item>
-      </Accordion>
+     
     </Container>
   );
 }

@@ -92,14 +92,15 @@
 .folderMain{
     /* border: 3px solid blue; */
     height: 100vh;
+    font-family: 'Press Start 2P', cursive;
 
 }
 
 .folder-tab {
-    height: 36px;
+    height: 40px;
     position: relative;
-    width: 300px;
-    top: 26px;
+    min-width: 370px;
+    top: 15px;
     background-color: #ffe177;
     left: 10px;
     display: inline-block;
@@ -110,13 +111,15 @@
     border-top: 3px solid black;
     border-left: 3px solid black;
     border-right: 3px solid black;
+    padding-left: 2%;
+    padding-right: 2%;
     text-align:center;
 }
 
 
 #folderPage {
     border-radius: 10px 10px 0px 0px;
-
+    font-family: 'Roboto Condensed', sans-serif;    text-align: center;
     border: 3px solid black;
     background-color: #ffe177;
     height: 75vh;
@@ -128,6 +131,7 @@
 #folderHeader {
     /* border: 3px solid black; */
     min-height: 2%;
+
     display: flex;
     justify-content: right;
 }
@@ -174,11 +178,34 @@
     animation: wiggle 1000ms linear 1;
 }
 
+.projectSummary {
+    min-width: 95%;
+    min-height: 10vh;
+    background-color: rgba(128, 128, 128, 0.336);
+    box-shadow: 10px 10px rgba(0,0,0,0.03);
+
+    border-radius: 25px;
+    margin: 1%;
+    display: flex;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: auto;
+}
+
+.contentMain{
+}
+
 .contentHeader{
     display: flex;
     justify-content: space-around;
 }
 
+
+.accordionMain {
+    margin: auto;
+    width: 105vh;
+    background-color: black;
+}
 
 
 
@@ -186,5 +213,6 @@
 .projectTitle{
     font-family: 'Press Start 2P', cursive; 
     font-size: medium;
+    margin-bottom: auto;
 }
 

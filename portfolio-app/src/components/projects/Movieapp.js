@@ -46,6 +46,33 @@ function Movieapp () {
             </a>
           </h4>
         </div>
+        <div>
+        <h4>This was my first group project with fellow programmers. It was definitely a learning experience.
+          Throughout this project my main role was that of Scrum Master. I refined my skills in Git workflow, reviewing pull requests and
+          merging the different development branches we had throughout the project.
+        </h4>
+        </div>
+        <Accordion defaultActiveKey={"1"}>
+        <Accordion.Item className="accordionMain">
+          <Accordion.Header>Project Screenshots</Accordion.Header>
+          <Accordion.Body>
+            <Carousel>
+              <Carousel.Item>
+                <img src={movie1} alt="1"></img>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img src={movie2} alt="1"></img>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img src={movie3} alt="1"></img>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img src={movie4} alt="1"></img>
+              </Carousel.Item>
+            </Carousel>
+          </Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
         <div className="contentLanguages">
           <div className="techBox">
             <h4>
@@ -188,27 +215,7 @@ function Movieapp () {
         </div>
       </div>
 
-      <Accordion defaultActiveKey={"1"}>
-        <Accordion.Item>
-          <Accordion.Header>Project Screenshots</Accordion.Header>
-          <Accordion.Body>
-            <Carousel>
-              <Carousel.Item>
-                <img src={movie1} alt="1"></img>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img src={movie2} alt="1"></img>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img src={movie3} alt="1"></img>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img src={movie4} alt="1"></img>
-              </Carousel.Item>
-            </Carousel>
-          </Accordion.Body>
-        </Accordion.Item>
-      </Accordion>
+  
       </Container>
     )
 }

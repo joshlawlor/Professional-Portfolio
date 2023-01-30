@@ -46,6 +46,39 @@ function Bugbuddy () {
             </a>
           </h4>
         </div>
+        <div>
+        <h4>This app was my first full stack application using the MERN stack. My main focus was the building 
+          an operational back-end. I spent a lot of time whiteboarding how I was going to set up my models.
+          I found out how important it is to build with scalability in mind, because as I added features or fields
+          to my models I realized easier ways to set them up.
+        </h4>
+        </div>
+        
+        <Accordion defaultActiveKey={"1"}>
+        <Accordion.Item className="accordionMain">
+          <Accordion.Header>Project Screenshots</Accordion.Header>
+          <Accordion.Body>
+            <Carousel>
+              <Carousel.Item>
+                <img src={bugbuddy1} alt="1"></img>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img src={bugbuddy2} alt="1"></img>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img src={bugbuddy3} alt="1"></img>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img src={bugbuddy4} alt="1"></img>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img src={bugbuddy5} alt="1"></img>
+              </Carousel.Item>
+            </Carousel>
+          </Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
+    
         <div className="contentLanguages">
           <div className="techBox">
             <h4>
@@ -188,30 +221,7 @@ function Bugbuddy () {
         </div>
       </div>
 
-      <Accordion defaultActiveKey={"1"}>
-        <Accordion.Item>
-          <Accordion.Header>Project Screenshots</Accordion.Header>
-          <Accordion.Body>
-            <Carousel>
-              <Carousel.Item>
-                <img src={bugbuddy1} alt="1"></img>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img src={bugbuddy2} alt="1"></img>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img src={bugbuddy3} alt="1"></img>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img src={bugbuddy4} alt="1"></img>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img src={bugbuddy5} alt="1"></img>
-              </Carousel.Item>
-            </Carousel>
-          </Accordion.Body>
-        </Accordion.Item>
-      </Accordion>
+    
           </Container>
 
     )

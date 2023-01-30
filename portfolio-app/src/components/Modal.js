@@ -63,7 +63,7 @@ function CustomModal({ props }) {
           <div className="folderMain">
             <nav id="tab">
               <div className="folder-tab">
-              <h1>Bugbuddy</h1>
+              <h2>Bugbuddy</h2>
               </div>
               
             </nav>
@@ -103,7 +103,7 @@ function CustomModal({ props }) {
           <div className="folderMain">
             <nav id="tab">
               <div className="folder-tab">
-              <h1>Bugbuddy 2.0</h1>
+              <h2>Bugbuddy 2.0</h2>
               </div>
               
             </nav>
@@ -142,7 +142,7 @@ function CustomModal({ props }) {
            <div className="folderMain">
             <nav id="tab">
               <div className="folder-tab">
-              <h1>Portfolio 1.0</h1>
+              <h2>Portfolio 1.0</h2>
               </div>
               
             </nav>
@@ -181,7 +181,7 @@ function CustomModal({ props }) {
          <div className="folderMain">
             <nav id="tab">
               <div className="folder-tab">
-              <h1>Movie App</h1>
+              <h2>Movie App</h2>
               </div>
               
             </nav>
