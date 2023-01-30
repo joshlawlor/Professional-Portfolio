@@ -53,9 +53,14 @@ function App() {
           <Route path="/contact" element={<Contact/>}/>
         </Routes>
       </div>
+      <div className="footerInfo">
+      <h3 className="copyright">+1-518-720-5073</h3>
+      <h3 className="copyright">JOSHLAWLOR1@GMAIL.COM</h3>
+      <h3 className="copyright">@2023 JL. ALL RIGHTS RESERVED</h3>
+
+      </div>
+
       <footer  className="footer">
-        <li className="brandIconFooter">JL</li>
-        <h3 className="copyright">@2023 JL. ALL RIGHTS RESERVED</h3>
       </footer>
       <div className="animatedBackground">
       </div>

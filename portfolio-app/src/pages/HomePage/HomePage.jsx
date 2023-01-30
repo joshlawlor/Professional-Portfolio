@@ -31,54 +31,58 @@ function HomePage() {
 
   const typewriter = new Typewriter(bio, {
     delay: 50,
-    hideCursorAfterText: true
+    hideCursorAfterText: true,
   });
   return (
     <div className="aboutContainer">
-
       <LazyLoadComponent>
-        
-      
-      <div className="about">
-        {/* <div className="cloud">
+        <div className="about">
+          {/* <div className="cloud">
             <img className="cloudTitle" src={cloudTitle}></img>
           </div> */}
-        <div>
-          <h1 className="aboutTitle">Joshua Lawlor</h1>
-          <p className="proFont">
-            <Typewriter
-              options={{
-                delay: 50,
-                loop: true
-              }}
-              onInit={(typewriter) => {
-                typewriter.pauseFor('1000').typeString("Full-Stack Software Engineer").pauseFor('500').deleteAll()
-                .typeString('Adaptable, Creative, Curious').pauseFor('500').deleteAll()
-                .typeString("Let's improve and grow together!").pauseFor('800')
-                .start();
-              }}
-            />
-          </p>
-        </div>
+          <div>
+            <h1 className="aboutTitle">Joshua Lawlor</h1>
+            <p className="proFont">
+              <Typewriter
+                options={{
+                  delay: 50,
+                  loop: true,
+                }}
+                onInit={(typewriter) => {
+                  typewriter
+                    .pauseFor("1000")
+                    .typeString("Full-Stack Software Engineer")
+                    .pauseFor("500")
+                    .deleteAll()
+                    .typeString("Adaptable, Creative, Curious")
+                    .pauseFor("500")
+                    .deleteAll()
+                    .typeString("Let's improve and grow together!")
+                    .pauseFor("800")
+                    .start();
+                }}
+              />
+            </p>
+          </div>
 
-        <div className="proLinks">
-          <li>
-            <a href="https://github.com/joshlawlor">
-              <img className="contactIcon" src={github} alt="icon"></img>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/joshuaryanlawlor/">
-              <img className="contactIcon" src={linkedin} alt="icon"></img>
-            </a>
-          </li>
-          <li>
-            <a href="mailto:joshlawlor1@gmail.com">
-              <img className="contactIcon" src={email} alt="email" />
-            </a>
-          </li>
-        </div>
-        {/* <p className="nintendo-font">
+          <div className="proLinks">
+            <li>
+              <a href="https://github.com/joshlawlor">
+                <img className="contactIcon" src={github} alt="icon"></img>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/joshuaryanlawlor/">
+                <img className="contactIcon" src={linkedin} alt="icon"></img>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:joshlawlor1@gmail.com">
+                <img className="contactIcon" src={email} alt="email" />
+              </a>
+            </li>
+          </div>
+          {/* <p className="nintendo-font">
             <Typewriter
             options={{
               delay: 40
@@ -92,7 +96,7 @@ function HomePage() {
               .pauseFor().start();
             }}/>
             </p> */}
-        {/* 
+          {/* 
           <div className="bioBox">
             <div className="bioHeader">
               <p className="powershell">
@@ -122,13 +126,14 @@ function HomePage() {
             </div>
             
           </div> */}
-      </div>
+        </div>
       </LazyLoadComponent>
-      
+
       <LazyLoadComponent>
-      <div className="photo">
-        <img className="profilePhoto" src={profile} alt="profile" />
-      </div></LazyLoadComponent>
+        <div className="photo">
+          <img className="profilePhoto" src={profile} alt="profile" />
+        </div>
+      </LazyLoadComponent>
 
       {/* 
         <div className="skillsBox">

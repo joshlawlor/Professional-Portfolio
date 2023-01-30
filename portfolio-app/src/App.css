@@ -192,25 +192,37 @@ overflow: hidden;
   background-color: white;
   min-width: 50%;
   max-width: 60%;
-  min-height: 1vh;
-  max-height: 10vh;
-  margin-top: .5%;
-  margin-bottom: 1%;
+  min-height: 3vh;
+  max-height: 10.2vh;
+  margin-top: .1%;
+  margin-bottom: .4%;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  justify-content: space-between;
+  justify-content: flex-end;
+overflow-x: hidden;
+  align-items:flex-end
+}
 
+.footerInfo {
+  min-width: 90vw;
+  /* border: 3px solid red; */
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-right: 9%;
 }
 
 
 .copyright{
-  
-   font-family: 'Press Start 2P', cursive;
+  margin-top: 1%;
+  margin-right: -6%;
+  font-family: 'Press Start 2P', cursive;
   min-width: 25vw;
   max-height: 5vh;
-  color: #e5fe75;
-  font-size: small;
+  /* color: #e5fe75; */
+  color: white;
+  font-size: xx-small;
 }
 
 .brandIconFooter {
