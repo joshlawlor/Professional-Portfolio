@@ -19,7 +19,7 @@
 
 .displayBox {
     /* border: 5px solid purple; */
-    /* animation: loadRight .7s linear 1ms 1; */
+    animation: loadRight .7s linear 1ms 1;
     animation-fill-mode: both;
     margin-right: 0%;
     min-width: 90%;
