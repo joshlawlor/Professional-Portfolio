@@ -22,12 +22,12 @@ function AboutPage() {
         </a> */}
 
         <li className="icons">
-          <a href="https://github.com/joshlawlor">
+          <a href="https://github.com/joshlawlor" target="_blank">
             <img src={github} alt="github" />
           </a>
         </li>
         <li className="icons">
-          <a href="https://www.linkedin.com/in/joshuaryanlawlor/">
+          <a href="https://www.linkedin.com/in/joshuaryanlawlor/" target="_blank">
             <img src={linkedin} alt="linkedin" />
           </a>
         </li>
@@ -51,22 +51,22 @@ function AboutPage() {
 
         <div className="bookBox">
           <li>
-          <a href="https://en.wikipedia.org/wiki/Brave_New_World">
+          <a href="https://en.wikipedia.org/wiki/Brave_New_World" target="_blank">
           <img className="bookImg" src={newworld}></img>
                 </a>
           </li>
           <li>
-          <a href="https://en.wikipedia.org/wiki/Slaughterhouse-Five">
+          <a href="https://en.wikipedia.org/wiki/Slaughterhouse-Five" target="_blank">
           <img className="bookImg" src={SLAUGHTER}></img>
                 </a>
           </li>
           <li>
-          <a href="https://www.penguinrandomhouse.com/books/187467/the-book-by-alan-watts/">
+          <a href="https://www.penguinrandomhouse.com/books/187467/the-book-by-alan-watts/" target="_blank">
           <img className="bookImg" src={thebook}></img>
                 </a>
           </li>
           <li>
-          <a href="https://en.wikipedia.org/wiki/Catching_the_Big_Fish">
+          <a href="https://en.wikipedia.org/wiki/Catching_the_Big_Fish" target="_blank">
           <img className="bookImg" src={bigfish}></img>
                 </a>
           </li>
@@ -74,23 +74,23 @@ function AboutPage() {
 
         <div className="movieBox">
           <li>
-          <a href="https://www.imdb.com/title/tt10954984/">
+          <a href="https://www.imdb.com/title/tt10954984/" target="_blank">
           <img className="movieImg" src={nope}></img>
                 </a>
           </li>
           <li>
-          <a href="https://www.imdb.com/title/tt6751668/">
+          <a href="https://www.imdb.com/title/tt6751668/" target="_blank">
           <img className="movieImg" src={parasite}></img>
 
                 </a>
           </li>
           <li>
-            <a href="https://www.imdb.com/title/tt0113247/">
+            <a href="https://www.imdb.com/title/tt0113247/" target="_blank">
             <img className="movieImg" src={haine}></img>
             </a>
           </li>
           <li>
-            <a href="https://www.imdb.com/title/tt0477348/">
+            <a href="https://www.imdb.com/title/tt0477348/" target="_blank">
               <img className="movieImg" src={nocountry}></img>
             </a>
           </li>

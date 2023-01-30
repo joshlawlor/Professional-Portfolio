@@ -24,12 +24,12 @@ function ProjectPage() {
     <div className="projectMain">
       <div className="sidebarMain">
         <li className="icons">
-          <a href="https://github.com/joshlawlor">
+          <a href="https://github.com/joshlawlor" target="_blank">
             <img src={github} alt="github" />
           </a>
         </li>
         <li className="icons">
-          <a href="https://www.linkedin.com/in/joshuaryanlawlor/">
+          <a href="https://www.linkedin.com/in/joshuaryanlawlor/" target="_blank">
             <img src={linkedin} alt="linkedin" />
           </a>
         </li>

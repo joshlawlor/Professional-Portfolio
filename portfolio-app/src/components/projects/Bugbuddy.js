@@ -35,13 +35,13 @@ function Bugbuddy () {
         <div className="contentHeader">
           <h4>
             Github Repo:{" "}
-            <a href="https://github.com/joshlawlor/Debugger-Frontend">
+            <a href="https://github.com/joshlawlor/Debugger-Frontend"  target="_blank">
               <img className="projectIcon" src={github} alt="github" />
             </a>{"   "}
           </h4>
           <h4>
           Live Link:{" "}
-            <a href="https://joshualawlor.netlify.app/">
+            <a href="https://joshualawlor.netlify.app/"  target="_blank">
               <img className="projectIcon" src={liveLink} alt="github" />
             </a>
           </h4>

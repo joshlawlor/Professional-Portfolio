@@ -35,13 +35,13 @@ function Movieapp () {
         <div className="contentHeader">
           <h4>
             Github Repo:{" "}
-            <a href="https://github.com/joshlawlor/BugBuddy-2.0">
+            <a href="https://github.com/joshlawlor/BugBuddy-2.0" target="_blank">
               <img className="projectIcon" src={github} alt="github" />
             </a>{"   "}
           </h4>
           <h4>
           Live Link:{" "}
-            <a href="https://bugbuddy.netlify.app/">
+            <a href="https://bugbuddy.netlify.app/" target="_blank">
               <img className="projectIcon" src={liveLink} alt="github" />
             </a>
           </h4>

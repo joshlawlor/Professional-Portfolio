@@ -67,12 +67,12 @@ function HomePage() {
 
           <div className="proLinks">
             <li>
-              <a href="https://github.com/joshlawlor">
+              <a href="https://github.com/joshlawlor" target="_blank">
                 <img className="contactIcon" src={github} alt="icon"></img>
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/joshuaryanlawlor/">
+              <a href="https://www.linkedin.com/in/joshuaryanlawlor/"  target="_blank">
                 <img className="contactIcon" src={linkedin} alt="icon"></img>
               </a>
             </li>
