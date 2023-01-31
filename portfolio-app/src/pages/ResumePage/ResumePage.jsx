@@ -1,6 +1,5 @@
-import React, { Suspense } from "react";
+import React from "react";
 import "./ResumePage.css";
-import { Link } from "react-router-dom";
 
 import linkedin from "../../assets/images/linkedin.png";
 import github from "../../assets/images/githubicon.png";
@@ -16,10 +15,8 @@ import MONGO from "../../assets/images/mongo.png";
 import SQL from "../../assets/images/sql.png";
 import POSTMAN from "../../assets/images/postman.png";
 import NODE from "../../assets/images/node.png";
-import GIT from "../../assets/images/git.png";
 import C from "../../assets/images/csharp.png";
 import HEROKU from "../../assets/images/heroku.png";
-import POWER from "../../assets/images/power.webp";
 import EXPRESS from "../../assets/images/express.png";
 import MATERIALIZE from "../../assets/images/materialize.png";
 import TAILWIND from "../../assets/images/tailwind.png";
@@ -40,10 +37,6 @@ function ResumePage() {
   return (
     <div className="resumeMain">
       <div className="resumeSidebar">
-        {/* <a href="/">
-          <li className="brandIconSide">JL</li>
-        </a> */}
-
         <li className="icons">
           <a href="https://github.com/joshlawlor" target="_blank">
             <img src={github} alt="github" />

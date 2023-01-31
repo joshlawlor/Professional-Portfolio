@@ -43,17 +43,13 @@ function ContactPage() {
   return (
     <div className="contactMain">
       <div className="contactSideBar">
-        {/* <a href="/">
-          <li className="brandIconSide">JL</li>
-        </a> */}
-
         <li className="icons">
-          <a href="https://github.com/joshlawlor" target="_blank">
+          <a href="https://github.com/joshlawlor" rel="noreferrer" target="_blank">
             <img src={github} alt="github" />
           </a>
         </li>
         <li className="icons">
-          <a href="https://www.linkedin.com/in/joshuaryanlawlor/" target="_blank">
+          <a href="https://www.linkedin.com/in/joshuaryanlawlor/" rel="noreferrer" target="_blank">
             <img src={linkedin} alt="linkedin" />
           </a>
         </li>

@@ -22,12 +22,12 @@ function AboutPage() {
         </a> */}
 
         <li className="icons">
-          <a href="https://github.com/joshlawlor" target="_blank">
+          <a href="https://github.com/joshlawlor" rel="noreferrer" target="_blank">
             <img src={github} alt="github" />
           </a>
         </li>
         <li className="icons">
-          <a href="https://www.linkedin.com/in/joshuaryanlawlor/" target="_blank">
+          <a href="https://www.linkedin.com/in/joshuaryanlawlor/" rel="noreferrer" target="_blank">
             <img src={linkedin} alt="linkedin" />
           </a>
         </li>
@@ -51,47 +51,47 @@ function AboutPage() {
 
         <div className="bookBox">
           <li>
-          <a href="https://en.wikipedia.org/wiki/Brave_New_World" target="_blank">
-          <img className="bookImg" src={newworld}></img>
+          <a href="https://en.wikipedia.org/wiki/Brave_New_World" rel="noreferrer" target="_blank">
+          <img alt="newworld" className="bookImg" src={newworld}></img>
                 </a>
           </li>
           <li>
-          <a href="https://en.wikipedia.org/wiki/Slaughterhouse-Five" target="_blank">
-          <img className="bookImg" src={SLAUGHTER}></img>
+          <a  href="https://en.wikipedia.org/wiki/Slaughterhouse-Five" rel="noreferrer" target="_blank">
+          <img alt="sl5"className="bookImg" src={SLAUGHTER}></img>
                 </a>
           </li>
           <li>
-          <a href="https://www.penguinrandomhouse.com/books/187467/the-book-by-alan-watts/" target="_blank">
-          <img className="bookImg" src={thebook}></img>
+          <a  href="https://www.penguinrandomhouse.com/books/187467/the-book-by-alan-watts/" rel="noreferrer" target="_blank">
+          <img alt="alanwatts" className="bookImg" src={thebook}></img>
                 </a>
           </li>
           <li>
-          <a href="https://en.wikipedia.org/wiki/Catching_the_Big_Fish" target="_blank">
-          <img className="bookImg" src={bigfish}></img>
+          <a  href="https://en.wikipedia.org/wiki/Catching_the_Big_Fish" rel="noreferrer" target="_blank">
+          <img alt="davidlynch" className="bookImg" src={bigfish}></img>
                 </a>
           </li>
         </div>
 
         <div className="movieBox">
           <li>
-          <a href="https://www.imdb.com/title/tt10954984/" target="_blank">
-          <img className="movieImg" src={nope}></img>
+          <a  href="https://www.imdb.com/title/tt10954984/" rel="noreferrer" target="_blank">
+          <img alt="nope" className="movieImg" src={nope}></img>
                 </a>
           </li>
           <li>
-          <a href="https://www.imdb.com/title/tt6751668/" target="_blank">
-          <img className="movieImg" src={parasite}></img>
+          <a   href="https://www.imdb.com/title/tt6751668/" rel="noreferrer" target="_blank">
+          <img alt="parasite" className="movieImg" src={parasite}></img>
 
                 </a>
           </li>
           <li>
-            <a href="https://www.imdb.com/title/tt0113247/" target="_blank">
-            <img className="movieImg" src={haine}></img>
+            <a  href="https://www.imdb.com/title/tt0113247/" rel="noreferrer" target="_blank">
+            <img alt="lahaine" className="movieImg" src={haine}></img>
             </a>
           </li>
           <li>
-            <a href="https://www.imdb.com/title/tt0477348/" target="_blank">
-              <img className="movieImg" src={nocountry}></img>
+            <a  href="https://www.imdb.com/title/tt0477348/" rel="noreferrer" target="_blank">
+              <img alt="russos" className="movieImg" src={nocountry}></img>
             </a>
           </li>
         </div>

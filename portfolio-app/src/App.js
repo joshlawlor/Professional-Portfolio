@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -9,8 +8,6 @@ import Projects from "./pages/ProjectPage/ProjectPage";
 import Resume from "./pages/ResumePage/ResumePage"
 import Contact from "./pages/ContactPage/ContactPage"
 import About from "./pages/AboutPage/AboutPage";
-import bricks from "./assets/images/bricks.webp";
-import clouds from "./assets/images/clouds.png"
 
 
 
@@ -23,7 +20,6 @@ function App() {
       <div className="appMain">
         <div className="homeNav">
           <ul className="navbarMain">
-            {/* <a href="/"><li className="brandIcon">JL</li></a> */}
             <li className="navLinks">
               <Link to="/contact">CONTACT</Link>
             </li>
@@ -39,9 +35,6 @@ function App() {
             <li className="navLinks">
               <Link to="/">HOME</Link>
             </li>
-            {/* <li className="navLinks">
-            <Link>joshlawlor1@gmail.com</Link>
-          </li> */}
           </ul>
         </div>
 
