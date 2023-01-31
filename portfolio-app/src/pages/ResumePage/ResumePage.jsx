@@ -67,7 +67,6 @@ function ResumePage() {
             <div className="techItems">
               <li>
                 <LazyLoadImage
-                  loading="lazy"
                   className="resumeIcons"
                   threshold={0.05}
                   src={JS}
@@ -85,8 +84,8 @@ function ResumePage() {
 
                   src={CSS}
                   alt="icon"
-                  visibleByDefault={false}
-                  // effect="blur"
+                  visibleByDefault={true}
+                  effect="blur"
                 />
               </li>
               <li>
@@ -95,8 +94,8 @@ function ResumePage() {
                   className="resumeIcons"
                   src={HTML}
                   alt="icon"
-                  visibleByDefault={false}
-                  // effect="blur"
+                  visibleByDefault={true}
+                  effect="blur"
                 />
               </li>
               <li>
@@ -106,26 +105,26 @@ function ResumePage() {
                   threshold={0.05}
                   src={TYPESCRIPT}
                   alt="icon"
-                  visibleByDefault={false}
+                  visibleByDefault={true}
+                  effect="blur"
                 />
               </li>
               <li>
                 <LazyLoadImage
-                  loading="lazy"
                   className="resumeIcons"
                   src={REACT}
                   alt="icon"
-                  visibleByDefault={false}
+                  visibleByDefault={true}
                 />
               </li>
              
               <li>
                 <LazyLoadImage
-                  loading="lazy"
                   className="resumeIcons"
                   src={HEROKU}
                   alt="icon"
-                  visibleByDefault={false}
+                  visibleByDefault={true}
+                  effect="blur"
                 />
               </li>
             </div>
@@ -138,11 +137,12 @@ function ResumePage() {
             <div className="techItems">
               <li>
                 <LazyLoadImage
-                  loading="lazy"
                   className="resumeIcons"
                   src={NODE}
                   alt="icon"
-                  visibleByDefault={false}
+                  visibleByDefault={true}
+                  effect="blur"
+
                 />
               </li>
               <li>
@@ -151,7 +151,7 @@ function ResumePage() {
                   className="resumeIcons"
                   src={EXPRESS}
                   alt="icon"
-                  visibleByDefault={false}
+                  visibleByDefault={true}
                 />
               </li>
               <li>
@@ -160,7 +160,7 @@ function ResumePage() {
                   className="resumeIcons"
                   src={MONGO}
                   alt="icon"
-                  visibleByDefault={false}
+                  visibleByDefault={true}
                 />
               </li>
               <li>
@@ -169,7 +169,7 @@ function ResumePage() {
                   className="resumeIcons"
                   src={SQL}
                   alt="icon"
-                  visibleByDefault={false}
+                  visibleByDefault={true}
                 />
               </li>
               <li>
@@ -178,7 +178,7 @@ function ResumePage() {
                   className="resumeIcons"
                   src={POSTMAN}
                   alt="icon"
-                  visibleByDefault={false}
+                  visibleByDefault={true}
                 />
               </li>
             </div>
@@ -190,24 +190,54 @@ function ResumePage() {
           <div className="techBox">
             <div className="techItems">
               <li>
-                <img  className="resumeIcons" src={BOOTSTRAP} alt="icon"></img>
+              <LazyLoadImage
+                  className="resumeIcons"
+                  src={BOOTSTRAP}
+                  alt="icon"
+                  visibleByDefault={true}
+                />
               </li>
               <li>
-                <img className="resumeIcons" src={TAILWIND} alt="icon"></img>
+              <LazyLoadImage
+                  className="resumeIcons"
+                  src={TAILWIND}
+                  alt="icon"
+                  visibleByDefault={true}
+                />
               </li>
 
               <li>
-                <img className="resumeIcons" src={MATERIALIZE} alt="icon"></img>
+              <LazyLoadImage
+                  className="resumeIcons"
+                  src={MATERIALIZE}
+                  alt="icon"
+                  visibleByDefault={true}
+                />
               </li>
 
               <li>
-                <img className="resumeIcons" src={PYTHON} alt="icon"></img>
+              <LazyLoadImage
+                  className="resumeIcons"
+                  src={PYTHON}
+                  alt="icon"
+                  visibleByDefault={true}
+                />
               </li>
               <li>
-                <img className="resumeIcons" src={DJANGO} alt="icon"></img>
+              <LazyLoadImage
+                  className="resumeIcons"
+                  src={DJANGO}
+                  alt="icon"
+                  visibleByDefault={true}
+                />
               </li>
               <li>
-                <img className="resumeIcons" src={C} alt="icon"></img>
+              <LazyLoadImage
+                  className="resumeIcons"
+                  src={C}
+                  alt="icon"
+                  visibleByDefault={true}
+                />
               </li>
             </div>
           </div>

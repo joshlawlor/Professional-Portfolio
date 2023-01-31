@@ -56,7 +56,7 @@ overflow: hidden;
 @keyframes loadRight {
   0%, 
   100% {
-    transform: translate(50%);
+    transform: translate(100%);
   }
   100% {
     transform: translate(0%);
