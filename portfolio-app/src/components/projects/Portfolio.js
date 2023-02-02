@@ -169,9 +169,7 @@ function Portfolio() {
                   threshold={0.05}
                   src={NODE}
                   alt="icon"
-                  visibleByDefault={false}
-                  // effect="blur"
-                />
+                  visibleByDefault={false}                />
               </li>
               <li>
                 <LazyLoadImage
@@ -179,9 +177,7 @@ function Portfolio() {
                   className="resumeIcons"
                   src={EXPRESS}
                   alt="icon"
-                  visibleByDefault={false}
-                  // effect="blur"
-                />
+                  visibleByDefault={false}                />
               </li>
               <li>
                 <LazyLoadImage

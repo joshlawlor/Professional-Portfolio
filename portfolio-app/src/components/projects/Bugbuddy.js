@@ -39,12 +39,7 @@ function Bugbuddy () {
               <img className="projectIcon" src={github} alt="github" />
             </a>{"   "}
           </h4>
-          {/* <h4>
-          Live Link:{" "}
-            <a href="https://joshualawlor.netlify.app/"  target="_blank">
-              <img className="projectIcon" src={liveLink} alt="github" />
-            </a>
-          </h4> */}
+         
         </div>
         <div>
         <h4>This app was my first full stack application using the MERN stack. My main focus was the building 

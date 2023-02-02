@@ -5,9 +5,7 @@
 }
 
 .aboutSideBar {
-      /* border: 3px solid grey; */
       max-width: 6%;
-      /* min-height: 86vh; */
       animation: loadBar 1s linear 500ms 1;
       animation-fill-mode: both;
 
@@ -36,8 +34,6 @@
 
 
 .bookBox {
-    /* border: 3px solid saddlebrown; */
-
     width: 50vw;
     background-color: rgba(128, 128, 128, 0.336);
     box-shadow: 10px 10px rgba(0,0,0,0.03);
@@ -57,7 +53,6 @@
 
 
 .movieBox {
-    /* border: 3px solid yellow; */
     width: 50vw;
     min-height: 24vh;
     background-color: rgba(128, 128, 128, 0.336);
